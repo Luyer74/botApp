@@ -60,32 +60,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-UP-Yzp">
-                                <rect key="frame" x="40" y="404" width="334" height="333"/>
+                                <rect key="frame" x="40" y="404" width="334" height="368.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BotDesaparecidx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQO-AP-sjd">
-                                        <rect key="frame" x="67" y="0.0" width="200.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <rect key="frame" x="86" y="0.0" width="162" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa con tu correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nB-2q-yVc">
-                                        <rect key="frame" x="81.5" y="50" width="171" height="21.5"/>
+                                        <rect key="frame" x="81.5" y="44" width="171" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfj-0H-xgz">
-                                        <rect key="frame" x="10" y="91.5" width="314" height="34"/>
+                                        <rect key="frame" x="10" y="85.5" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WgL-qM-gVn">
-                                        <rect key="frame" x="10" y="145.5" width="314" height="34"/>
+                                        <rect key="frame" x="10" y="139.5" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DPf-Bi-wv8">
-                                        <rect key="frame" x="17" y="199.5" width="300" height="133.5"/>
+                                        <rect key="frame" x="17" y="193.5" width="300" height="175"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zd8-Yo-faa">
                                                 <rect key="frame" x="50" y="0.0" width="200" height="36"/>
@@ -97,6 +97,9 @@
                                                 <state key="normal" title="Log In">
                                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="logInTapped:" destination="MaL-oB-7Sj" eventType="touchUpInside" id="GfW-Ka-Uaw"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o con tu cuenta de google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arG-EX-IUK">
                                                 <rect key="frame" x="45.5" y="56" width="209.5" height="21.5"/>
@@ -112,6 +115,12 @@
                                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </state>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dl-a9-m5i">
+                                                <rect key="frame" x="130.5" y="153.5" width="39.5" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Xki-Aa-oS8"/>
@@ -139,6 +148,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7nK-wv-4mR"/>
+                    <connections>
+                        <outlet property="btLogIn" destination="Zd8-Yo-faa" id="bsE-kN-SSA"/>
+                        <outlet property="lbError" destination="2dl-a9-m5i" id="xtF-Vq-1WP"/>
+                        <outlet property="tfContraseña" destination="WgL-qM-gVn" id="I2h-Gb-P4e"/>
+                        <outlet property="tfEmail" destination="Bfj-0H-xgz" id="mFv-8l-ZIP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQa-Ta-xGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,6 +203,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
