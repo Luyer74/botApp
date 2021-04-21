@@ -16,11 +16,12 @@
 		FA9BEB56262F818C009E3540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BEB54262F818C009E3540 /* Main.storyboard */; };
 		FA9BEB58262F818D009E3540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9BEB57262F818D009E3540 /* Assets.xcassets */; };
 		FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BEB59262F818D009E3540 /* LaunchScreen.storyboard */; };
+		FAB601702630A9460015F8F7 /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB6016F2630A9250015F8F7 /* MuseoModerno-VariableFont_wght.ttf */; };
+		FADFE0D8262FB22500EE4DF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FADFE0D7262FB22500EE4DF0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74DD964D0108D37424E7CB88 /* Pods-botDesaparecidx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.debug.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.debug.xcconfig"; sourceTree = "<group>"; };
-		B28BBFA1262FA1660000890F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8124222847D04DFF346405F /* Pods_botDesaparecidx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_botDesaparecidx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8D8D283D984ABED60A2CFB /* Pods-botDesaparecidx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.release.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.release.xcconfig"; sourceTree = "<group>"; };
 		FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistrar.swift; sourceTree = "<group>"; };
@@ -33,6 +34,8 @@
 		FA9BEB57262F818D009E3540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA9BEB5A262F818D009E3540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9BEB5C262F818D009E3540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB6016F2630A9250015F8F7 /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../../Downloads/MuseoModerno/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		FADFE0D7262FB22500EE4DF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +88,10 @@
 		FA9BEB4D262F818C009E3540 /* botDesaparecidx */ = {
 			isa = PBXGroup;
 			children = (
-				B28BBFA1262FA1660000890F /* GoogleService-Info.plist */,
+				FAB6016E2630A9100015F8F7 /* fonts */,
 				FA9BEB4E262F818C009E3540 /* AppDelegate.swift */,
 				FA9BEB50262F818C009E3540 /* SceneDelegate.swift */,
+				FADFE0D7262FB22500EE4DF0 /* GoogleService-Info.plist */,
 				FA9BEB52262F818C009E3540 /* ViewController.swift */,
 				FA9BEB54262F818C009E3540 /* Main.storyboard */,
 				FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */,
@@ -97,6 +101,14 @@
 				FA9BEB5C262F818D009E3540 /* Info.plist */,
 			);
 			path = botDesaparecidx;
+			sourceTree = "<group>";
+		};
+		FAB6016E2630A9100015F8F7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6016F2630A9250015F8F7 /* MuseoModerno-VariableFont_wght.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */,
-				B28BBFA2262FA1660000890F /* GoogleService-Info.plist in Resources */,
+				FADFE0D8262FB22500EE4DF0 /* GoogleService-Info.plist in Resources */,
 				FA9BEB58262F818D009E3540 /* Assets.xcassets in Resources */,
 				FA9BEB56262F818C009E3540 /* Main.storyboard in Resources */,
+				FAB601702630A9460015F8F7 /* MuseoModerno-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
