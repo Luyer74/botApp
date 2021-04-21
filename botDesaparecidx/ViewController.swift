@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func probarBase(_ sender: UIButton) {
-        ref.child("USUARIOS_APP").updateChildValues(["pruebecita": "usuario2"])
+        ref.child("USUARIOS_APP").updateChildValues(["prueba3": "usuario3"])
     }
     
 }
