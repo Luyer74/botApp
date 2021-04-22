@@ -8,6 +8,13 @@
 import UIKit
 
 class ViewControllerRegistrar: UIViewController {
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfApellido: UITextField!
+    @IBOutlet weak var tfCorreo: UITextField!
+    @IBOutlet weak var tfContrasena: UITextField!
+    @IBOutlet weak var tfConfirmarContra: UITextField!
+    @IBOutlet weak var btRegistrarse: UIButton!
+    @IBOutlet weak var lbError: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
