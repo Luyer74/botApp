@@ -22,5 +22,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+##ignore plist google
+**/ios/Runner/GoogleService-Info.plist
 ## Gcc Patch
 /*.gcno
