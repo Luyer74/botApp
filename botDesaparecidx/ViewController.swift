@@ -18,9 +18,7 @@ class ViewController: UIViewController {
         ref = Database.database().reference()
     }
 
-    @IBAction func probarBase(_ sender: UIButton) {
-        ref.child("USUARIOS_APP").updateChildValues(["prueba3": "usuario3"])
-    }
+    
     
 }
 
