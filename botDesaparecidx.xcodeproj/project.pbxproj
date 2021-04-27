@@ -11,13 +11,13 @@
 		FA3D4E45263209710047DD4F /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80A0272632059000FBFE58 /* MuseoModerno-VariableFont_wght.ttf */; };
 		FA3EA0C7262FA9060093BD96 /* ViewControllerRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */; };
 		FA3EA0C9262FA9180093BD96 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */; };
-		FA80A0292632059800FBFE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA80A0282632059800FBFE58 /* GoogleService-Info.plist */; };
 		FA9BEB4F262F818C009E3540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BEB4E262F818C009E3540 /* AppDelegate.swift */; };
 		FA9BEB51262F818C009E3540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BEB50262F818C009E3540 /* SceneDelegate.swift */; };
 		FA9BEB53262F818C009E3540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BEB52262F818C009E3540 /* ViewController.swift */; };
 		FA9BEB56262F818C009E3540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BEB54262F818C009E3540 /* Main.storyboard */; };
 		FA9BEB58262F818D009E3540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9BEB57262F818D009E3540 /* Assets.xcassets */; };
 		FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BEB59262F818D009E3540 /* LaunchScreen.storyboard */; };
+		FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,6 @@
 		FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistrar.swift; sourceTree = "<group>"; };
 		FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
 		FA80A0272632059000FBFE58 /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		FA80A0282632059800FBFE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA9BEB4B262F818C009E3540 /* botDesaparecidx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = botDesaparecidx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9BEB4E262F818C009E3540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9BEB50262F818C009E3540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		FA9BEB57262F818D009E3540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA9BEB5A262F818D009E3540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9BEB5C262F818D009E3540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 				FA9BEB4E262F818C009E3540 /* AppDelegate.swift */,
 				FA9BEB50262F818C009E3540 /* SceneDelegate.swift */,
 				FA80A0262632058800FBFE58 /* fonts */,
-				FA80A0282632059800FBFE58 /* GoogleService-Info.plist */,
 				FA9BEB52262F818C009E3540 /* ViewController.swift */,
 				FA9BEB54262F818C009E3540 /* Main.storyboard */,
+				FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */,
 				FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */,
 				FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */,
 				FA9BEB57262F818D009E3540 /* Assets.xcassets */,
@@ -172,7 +172,7 @@
 			files = (
 				FA3D4E45263209710047DD4F /* MuseoModerno-VariableFont_wght.ttf in Resources */,
 				FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */,
-				FA80A0292632059800FBFE58 /* GoogleService-Info.plist in Resources */,
+				FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */,
 				FA9BEB58262F818D009E3540 /* Assets.xcassets in Resources */,
 				FA9BEB56262F818C009E3540 /* Main.storyboard in Resources */,
 			);
