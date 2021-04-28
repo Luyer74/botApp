@@ -63,8 +63,9 @@ class ViewControllerLogin: UIViewController {
                 self.view.window?.rootViewController = homeViewController
                 self.view.window?.makeKeyAndVisible()
  */
-                self.lbError.text = "LogIn exitoso"
-                self.lbError.alpha = 1
+                //self.lbError.text = "LogIn exitoso"
+                //self.lbError.alpha = 1
+                print("LogIn Exitoso")
             }
         }
     }
