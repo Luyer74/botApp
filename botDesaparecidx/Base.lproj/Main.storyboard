@@ -364,6 +364,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="registroTap:" destination="t5X-Yr-lGY" eventType="touchUpInside" id="qK0-ys-p2u"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o con tu cuenta de google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTc-dm-nKP">
                                                 <rect key="frame" x="45.5" y="70" width="209.5" height="21.5"/>
@@ -424,6 +427,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cFQ-Wa-XB1"/>
+                    <connections>
+                        <outlet property="btRegistrarse" destination="04u-mc-RPN" id="Agg-yR-dXk"/>
+                        <outlet property="lbError" destination="h4k-HD-sTI" id="Ory-Q8-ENK"/>
+                        <outlet property="tfApellido" destination="Txh-qU-peF" id="6BY-Q6-FZl"/>
+                        <outlet property="tfConfirmarContra" destination="yd2-hp-SYk" id="c6s-M7-bho"/>
+                        <outlet property="tfContrasena" destination="B0Y-dl-55E" id="qk1-Wu-YZ5"/>
+                        <outlet property="tfCorreo" destination="3q1-dE-H5y" id="azi-Xs-bRo"/>
+                        <outlet property="tfNombre" destination="DTA-q1-CnD" id="pZc-qU-8dN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9C-VT-gnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
