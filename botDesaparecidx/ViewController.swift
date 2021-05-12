@@ -16,12 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         ref = Database.database().reference()
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-       } catch let signOutError as NSError {
-         print ("Error signing out: %@", signOutError)
-       }
     }
 
     

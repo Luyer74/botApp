@@ -58,14 +58,16 @@ class ViewControllerLogin: UIViewController {
                 self.lbError.text = error!.localizedDescription
                 self.lbError.alpha = 1
             } else {
-                /*
-                let homeViewControler = self.storyboard?.instantiateViewController(identifier: <#T##String#>) as? homeViewController
-                self.view.window?.rootViewController = homeViewController
-                self.view.window?.makeKeyAndVisible()
- */
-                //self.lbError.text = "LogIn exitoso"
-                //self.lbError.alpha = 1
-                print("LogIn Exitoso")
+                if !result!.user.isEmailVerified {
+                    self.lbError.text = "Verifica tu correo antes de ingresar"
+                    self.lbError.alpha = 1
+                }
+                else{
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let homeController = storyboard.instantiateViewController(identifier: "HomeViewController")
+                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(homeController)
+                    print("LogIn Exitoso")
+                }
             }
         }
     }

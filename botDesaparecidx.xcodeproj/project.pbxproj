@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8CC988DD61712D099C2F05D6 /* Pods_botDesaparecidx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8124222847D04DFF346405F /* Pods_botDesaparecidx.framework */; };
+		FA0E21B9264B7F20004EF7AF /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5F7369264B7E6B0068F172 /* MuseoModerno-VariableFont_wght.ttf */; };
+		FA251548264C24BC00B4DB65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251547264C24BC00B4DB65 /* HomeViewController.swift */; };
+		FA25154B264C2AEB00B4DB65 /* ViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25154A264C2AEB00B4DB65 /* ViewControllerInicio.swift */; };
 		FA3EA0C7262FA9060093BD96 /* ViewControllerRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */; };
 		FA3EA0C9262FA9180093BD96 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */; };
 		FA9BEB4F262F818C009E3540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BEB4E262F818C009E3540 /* AppDelegate.swift */; };
@@ -21,11 +24,13 @@
 
 /* Begin PBXFileReference section */
 		74DD964D0108D37424E7CB88 /* Pods-botDesaparecidx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.debug.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.debug.xcconfig"; sourceTree = "<group>"; };
-		B23B382B2638DB4E000591D2 /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		E8124222847D04DFF346405F /* Pods_botDesaparecidx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_botDesaparecidx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8D8D283D984ABED60A2CFB /* Pods-botDesaparecidx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.release.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.release.xcconfig"; sourceTree = "<group>"; };
+		FA251547264C24BC00B4DB65 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA25154A264C2AEB00B4DB65 /* ViewControllerInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInicio.swift; sourceTree = "<group>"; };
 		FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistrar.swift; sourceTree = "<group>"; };
 		FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
+		FA5F7369264B7E6B0068F172 /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		FA9BEB4B262F818C009E3540 /* botDesaparecidx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = botDesaparecidx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9BEB4E262F818C009E3540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9BEB50262F818C009E3540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,14 +62,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B23B382A2638DB3D000591D2 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				B23B382B2638DB4E000591D2 /* MuseoModerno-VariableFont_wght.ttf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
 		DBD2F4D7C3C47389A7D2B3CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +69,14 @@
 				EE8D8D283D984ABED60A2CFB /* Pods-botDesaparecidx.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA5F7368264B7E610068F172 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F7369264B7E6B0068F172 /* MuseoModerno-VariableFont_wght.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		FA9BEB42262F818C009E3540 = {
@@ -95,11 +100,13 @@
 		FA9BEB4D262F818C009E3540 /* botDesaparecidx */ = {
 			isa = PBXGroup;
 			children = (
+				FA5F7368264B7E610068F172 /* fonts */,
 				FA9BEB4E262F818C009E3540 /* AppDelegate.swift */,
 				FA9BEB50262F818C009E3540 /* SceneDelegate.swift */,
 				FA9BEB52262F818C009E3540 /* ViewController.swift */,
-				B23B382A2638DB3D000591D2 /* fonts */,
 				FA9BEB54262F818C009E3540 /* Main.storyboard */,
+				FA25154A264C2AEB00B4DB65 /* ViewControllerInicio.swift */,
+				FA251547264C24BC00B4DB65 /* HomeViewController.swift */,
 				FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */,
 				FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */,
 				FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */,
@@ -169,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0E21B9264B7F20004EF7AF /* MuseoModerno-VariableFont_wght.ttf in Resources */,
 				FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */,
 				FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */,
 				FA9BEB58262F818D009E3540 /* Assets.xcassets in Resources */,
@@ -229,7 +237,9 @@
 				FA9BEB53262F818C009E3540 /* ViewController.swift in Sources */,
 				FA9BEB4F262F818C009E3540 /* AppDelegate.swift in Sources */,
 				FA3EA0C7262FA9060093BD96 /* ViewControllerRegistrar.swift in Sources */,
+				FA25154B264C2AEB00B4DB65 /* ViewControllerInicio.swift in Sources */,
 				FA9BEB51262F818C009E3540 /* SceneDelegate.swift in Sources */,
+				FA251548264C24BC00B4DB65 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

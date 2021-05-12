@@ -96,6 +96,12 @@ class ViewControllerRegistrar: UIViewController {
                         "correo" : correo
                     ])
                     self.lbError.text = "Usuario creado!"
+                    result!.user.sendEmailVerification { (error) in
+                        if error != nil {
+                            print("error enviando correo")
+                        }
+                    }
+                    self.navigationController?.popViewController(animated: true)
                 }
             }
         }
