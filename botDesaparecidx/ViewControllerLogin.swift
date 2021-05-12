@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class ViewControllerLogin: UIViewController {
     
     @IBOutlet weak var tfEmail: UITextField!
@@ -20,24 +20,54 @@ class ViewControllerLogin: UIViewController {
         // Do any additional setup after loading the view.
         lbError.alpha = 0
     }
+    // MARK: -Funciones de Log In
+    func isPasswordValid(_ password: String) -> Bool {
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        return passwordTest.evaluate(with: password)
+    }
     
+    func validateFields() -> String? {
+        if tfEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" || tfContraseña.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" {
+            return "Por favor llene los campos"
+        }
+        //Check if password is secure
+        let cleanedPassword = tfContraseña.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if isPasswordValid(cleanedPassword) == false {
+            return "Por favor revise que su contraseña sea correcta"
+        }
+        
+        return nil
+    }
     
     @IBAction func logInTapped(_ sender: Any) {
         //Validar text fields
-        if tfEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" || tfContraseña.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" {
-            lbError.alpha = 1.0
-            lbError.text = "Por favor llene los campos"
-            return
+        let error = validateFields()
+        if error != nil {
+            lbError.text = error!
+            lbError.alpha = 1
         }
-        //Checar contraseña
-//        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
-//        let isValid = passwordTest.evaluate(with: tfContraseña.text?.trimmingCharacters(in: .whitespacesAndNewlines))
-//        if isValid == false {
-//            lbError.alpha = 1.0
-//            lbError.text = ""
-//            return
-//        }
-        //Sign in del Usuario
+        //Crear versiones limpias de los campos
+        let email = tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = tfContraseña.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        //Sign
+        Auth.auth().signIn(withEmail:email, password: password) {
+            (result, error) in
+            if error != nil{
+                //No pudo acceder
+                self.lbError.text = error!.localizedDescription
+                self.lbError.alpha = 1
+            } else {
+                /*
+                let homeViewControler = self.storyboard?.instantiateViewController(identifier: <#T##String#>) as? homeViewController
+                self.view.window?.rootViewController = homeViewController
+                self.view.window?.makeKeyAndVisible()
+ */
+                //self.lbError.text = "LogIn exitoso"
+                //self.lbError.alpha = 1
+                print("LogIn Exitoso")
+            }
+        }
     }
     
     /*
