@@ -134,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-UP-Yzp">
-                                <rect key="frame" x="40" y="54" width="334" height="662.5"/>
+                                <rect key="frame" x="40" y="54" width="334" height="718.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-kN-vzm">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="150"/>
@@ -188,7 +188,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DPf-Bi-wv8">
-                                        <rect key="frame" x="17" y="459.5" width="300" height="203"/>
+                                        <rect key="frame" x="17" y="459.5" width="300" height="259"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-br-Kd1">
                                                 <rect key="frame" x="75" y="0.0" width="150" height="50"/>
@@ -239,6 +239,14 @@
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWE-y4-HGj">
+                                                <rect key="frame" x="110.5" y="223" width="79" height="36"/>
+                                                <color key="backgroundColor" red="0.3532895392" green="0.58121827410000004" blue="0.58121827410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Regresar">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Xki-Aa-oS8"/>
@@ -270,6 +278,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQa-Ta-xGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1879.7101449275365" y="394.41964285714283"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="gGW-5z-If8">
+            <objects>
+                <viewController id="G4W-vg-fgd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7bD-6d-2oN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t1J-xl-CZT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="znN-u1-jxa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydz-0b-gJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3583" y="453"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="eC4-JU-lNT">
+            <objects>
+                <viewController id="dVm-xm-ZFs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K9j-OB-tJX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="237-67-ov5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="uyL-QA-tQ8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Th-BQ-ZnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3583" y="-202"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RxJ-O0-n21">
+            <objects>
+                <tabBarController id="FEX-ie-wNI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6v6-sd-eeh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dVm-xm-ZFs" kind="relationship" relationship="viewControllers" id="Lrf-Wa-rOP"/>
+                        <segue destination="G4W-vg-fgd" kind="relationship" relationship="viewControllers" id="D8b-oS-ewJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDO-5V-U01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2807" y="78"/>
         </scene>
         <!--View Controller Registrar-->
         <scene sceneID="jhM-UU-9jQ">
@@ -453,6 +511,9 @@
     <resources>
         <image name="fb logo bot" width="512" height="512"/>
         <image name="transparent-logo" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
