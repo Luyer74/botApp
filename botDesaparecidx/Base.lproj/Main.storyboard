@@ -412,11 +412,6 @@
                                     <constraint firstItem="B0Y-dl-55E" firstAttribute="width" secondItem="Txh-qU-peF" secondAttribute="width" id="pqf-fB-D2H"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKn-FC-eLr">
-                                <rect key="frame" x="19" y="19.5" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Atras"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jKH-5j-VhF"/>
                         <color key="backgroundColor" red="0.88619667290000004" green="0.88632434609999999" blue="0.88616865869999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
