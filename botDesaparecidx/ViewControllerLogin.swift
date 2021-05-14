@@ -19,7 +19,14 @@ class ViewControllerLogin: UIViewController {
 
         // Do any additional setup after loading the view.
         lbError.alpha = 0
+        let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
+        view.addGestureRecognizer(tap)
     }
+    
+    @IBAction func quitaTeclado(){
+        view.endEditing(true)
+    }
+    
     // MARK: -Funciones de Log In
     func isPasswordValid(_ password: String) -> Bool {
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")

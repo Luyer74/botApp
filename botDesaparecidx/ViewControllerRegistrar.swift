@@ -24,8 +24,13 @@ class ViewControllerRegistrar: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
+        view.addGestureRecognizer(tap)
     }
     
+    @IBAction func quitaTeclado(){
+        view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
