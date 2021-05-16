@@ -326,7 +326,7 @@
         <!--Compartir-->
         <scene sceneID="eC4-JU-lNT">
             <objects>
-                <viewController id="dVm-xm-ZFs" customClass="ViewControllerCompartir" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dVm-xm-ZFs" customClass="ViewControllerInicio" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K9j-OB-tJX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
