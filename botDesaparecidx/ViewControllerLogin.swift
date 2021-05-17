@@ -21,6 +21,12 @@ class ViewControllerLogin: UIViewController {
         lbError.alpha = 0
         let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
         view.addGestureRecognizer(tap)
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.backItem?.title = "Atrás"
     }
     
     @IBAction func quitaTeclado(){
