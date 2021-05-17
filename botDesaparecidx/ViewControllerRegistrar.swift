@@ -28,6 +28,10 @@ class ViewControllerRegistrar: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.backItem?.title = "Atrás"
+    }
+    
     @IBAction func quitaTeclado(){
         view.endEditing(true)
     }

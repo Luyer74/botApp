@@ -18,7 +18,12 @@ class ViewController: UIViewController {
         ref = Database.database().reference()
     }
 
-    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = ""
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Atrás"
+    }
     
 }
 
