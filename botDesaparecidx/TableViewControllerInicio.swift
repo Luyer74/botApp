@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class TableViewControllerInicio: UITableViewController {
 
+    var ref : DatabaseReference!
+    var listaCasos = [tweet]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,29 +22,45 @@ class TableViewControllerInicio: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        ref = Database.database().reference()
+        var tweet_text = ""
+        var date_created = ""
+        ref.child("TWEETS").queryOrdered(byChild: "date_created").queryLimited(toLast: 50).observe(.childAdded) { (snapshot) in
+            if let valueDictionary = snapshot.value as? [AnyHashable:AnyObject]{
+                print("uwu")
+                tweet_text = valueDictionary["tweet_text"] as! String
+                date_created = valueDictionary["date_created"] as! String
+                let tw = tweet(tweet_text: tweet_text, fecha_creado: date_created)
+                self.listaCasos.insert(tw, at: 0)
+            } else{
+                print("owo")
+            }
+            self.tableView.reloadData()
+        }
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return listaCasos.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
 
         // Configure the cell...
-
+        cell.textLabel?.text = listaCasos[indexPath.row].tweet_text
+        cell.detailTextLabel?.text = listaCasos[indexPath.row].fecha_creado
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
