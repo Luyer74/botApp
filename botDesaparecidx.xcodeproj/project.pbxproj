@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CC988DD61712D099C2F05D6 /* Pods_botDesaparecidx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8124222847D04DFF346405F /* Pods_botDesaparecidx.framework */; };
+		B27B005226521A68009D82AD /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B27B005126521A68009D82AD /* MuseoModerno-VariableFont_wght.ttf */; };
 		B2C738A32651D8A30015DA8E /* TableViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A22651D8A30015DA8E /* TableViewControllerInicio.swift */; };
 		B2C738A62651D8E00015DA8E /* TableViewControllerBuscar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A52651D8E00015DA8E /* TableViewControllerBuscar.swift */; };
 		B2C738A92651D95B0015DA8E /* ViewControllerCompartir.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		74DD964D0108D37424E7CB88 /* Pods-botDesaparecidx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.debug.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.debug.xcconfig"; sourceTree = "<group>"; };
+		B27B005126521A68009D82AD /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../Downloads/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		B29F222A264F157E0027FAF5 /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		B2C738A22651D8A30015DA8E /* TableViewControllerInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerInicio.swift; sourceTree = "<group>"; };
 		B2C738A52651D8E00015DA8E /* TableViewControllerBuscar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBuscar.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		FA9BEB42262F818C009E3540 = {
 			isa = PBXGroup;
 			children = (
+				B27B005126521A68009D82AD /* MuseoModerno-VariableFont_wght.ttf */,
 				FA9BEB4D262F818C009E3540 /* botDesaparecidx */,
 				FA9BEB4C262F818C009E3540 /* Products */,
 				DBD2F4D7C3C47389A7D2B3CA /* Pods */,
@@ -191,6 +194,7 @@
 				FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */,
 				FA9BEB58262F818D009E3540 /* Assets.xcassets in Resources */,
 				FA9BEB56262F818C009E3540 /* Main.storyboard in Resources */,
+				B27B005226521A68009D82AD /* MuseoModerno-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

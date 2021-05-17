@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         UIBarButtonItem.appearance().tintColor = .black
-        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "MuseoModerno", size: 17)!], for: .normal)
         return true
     }
 
