@@ -24,11 +24,7 @@ class ViewControllerLogin: UIViewController {
         
         
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.backItem?.title = "Atrás"
-    }
-    
+        
     @IBAction func quitaTeclado(){
         view.endEditing(true)
     }
