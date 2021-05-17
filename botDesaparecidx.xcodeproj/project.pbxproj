@@ -13,11 +13,11 @@
 		B2C738A92651D95B0015DA8E /* ViewControllerCompartir.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */; };
 		B2C738AC2651D99C0015DA8E /* TableViewControllerGuardar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738AB2651D99C0015DA8E /* TableViewControllerGuardar.swift */; };
 		FA07B2962651E4B300DA4AAD /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA07B2952651E4AF00DA4AAD /* MuseoModerno-VariableFont_wght.ttf */; };
-		FA07B2AD26521AA500DA4AAD /* tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07B2AC26521AA400DA4AAD /* tweet.swift */; };
 		FA251548264C24BC00B4DB65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251547264C24BC00B4DB65 /* HomeViewController.swift */; };
 		FA25154B264C2AEB00B4DB65 /* ViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25154A264C2AEB00B4DB65 /* ViewControllerInicio.swift */; };
 		FA3EA0C7262FA9060093BD96 /* ViewControllerRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */; };
 		FA3EA0C9262FA9180093BD96 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */; };
+		FA7071AB2652FB0900936FE9 /* tweet.swift 14-26-01-675.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7071AA2652FB0900936FE9 /* tweet.swift 14-26-01-675.swift */; };
 		FA9BEB4F262F818C009E3540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BEB4E262F818C009E3540 /* AppDelegate.swift */; };
 		FA9BEB51262F818C009E3540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BEB50262F818C009E3540 /* SceneDelegate.swift */; };
 		FA9BEB53262F818C009E3540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BEB52262F818C009E3540 /* ViewController.swift */; };
@@ -36,11 +36,11 @@
 		E8124222847D04DFF346405F /* Pods_botDesaparecidx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_botDesaparecidx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8D8D283D984ABED60A2CFB /* Pods-botDesaparecidx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.release.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.release.xcconfig"; sourceTree = "<group>"; };
 		FA07B2952651E4AF00DA4AAD /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		FA07B2AC26521AA400DA4AAD /* tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tweet.swift; path = /Users/luyer/Desktop/botApp/botDesaparecidx/tweet.swift; sourceTree = "<absolute>"; };
 		FA251547264C24BC00B4DB65 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA25154A264C2AEB00B4DB65 /* ViewControllerInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInicio.swift; sourceTree = "<group>"; };
 		FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistrar.swift; sourceTree = "<group>"; };
 		FA3EA0C8262FA9180093BD96 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
+		FA7071AA2652FB0900936FE9 /* tweet.swift 14-26-01-675.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "tweet.swift 14-26-01-675.swift"; path = "../../../.Trash/tweet.swift 14-26-01-675.swift"; sourceTree = "<group>"; };
 		FA9BEB4B262F818C009E3540 /* botDesaparecidx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = botDesaparecidx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9BEB4E262F818C009E3540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9BEB50262F818C009E3540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 		FA9BEB4D262F818C009E3540 /* botDesaparecidx */ = {
 			isa = PBXGroup;
 			children = (
-				FA07B2AC26521AA400DA4AAD /* tweet.swift */,
 				FA07B2942651E49800DA4AAD /* fonts */,
 				FA9BEB4E262F818C009E3540 /* AppDelegate.swift */,
+				FA7071AA2652FB0900936FE9 /* tweet.swift 14-26-01-675.swift */,
 				FA9BEB50262F818C009E3540 /* SceneDelegate.swift */,
 				FA9BEB52262F818C009E3540 /* ViewController.swift */,
 				FA9BEB54262F818C009E3540 /* Main.storyboard */,
@@ -252,10 +252,10 @@
 				B2C738A92651D95B0015DA8E /* ViewControllerCompartir.swift in Sources */,
 				FA3EA0C9262FA9180093BD96 /* ViewControllerLogin.swift in Sources */,
 				FA9BEB53262F818C009E3540 /* ViewController.swift in Sources */,
+				FA7071AB2652FB0900936FE9 /* tweet.swift 14-26-01-675.swift in Sources */,
 				FA9BEB4F262F818C009E3540 /* AppDelegate.swift in Sources */,
 				FA3EA0C7262FA9060093BD96 /* ViewControllerRegistrar.swift in Sources */,
 				B2C738A32651D8A30015DA8E /* TableViewControllerInicio.swift in Sources */,
-				FA07B2AD26521AA500DA4AAD /* tweet.swift in Sources */,
 				B2C738A62651D8E00015DA8E /* TableViewControllerBuscar.swift in Sources */,
 				FA25154B264C2AEB00B4DB65 /* ViewControllerInicio.swift in Sources */,
 				FA9BEB51262F818C009E3540 /* SceneDelegate.swift in Sources */,
