@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W0t-FV-a48">
+<<<<<<< Updated upstream
     <device id="retina4_7" orientation="portrait" appearance="light"/>
+=======
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+>>>>>>> Stashed changes
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,6 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< Updated upstream
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QGD-z1-pKL">
                                 <rect key="frame" x="50" y="50" width="275" height="482"/>
                                 <subviews>
@@ -38,15 +43,39 @@
                                                 <rect key="frame" x="21" y="184" width="233.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="hr2-4z-WQx"/>
+=======
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="QGD-z1-pKL">
+                                <rect key="frame" x="50" y="190.66666666666663" width="314" height="521"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-GO-DnM">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="356"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transparent-logo" translatesAutoresizingMaskIntoConstraints="NO" id="owB-ok-Naw">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="178"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="178" id="BQA-6D-UAH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BotDesaparecidx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFf-r1-6Io">
+                                                <rect key="frame" x="44.333333333333329" y="207.00000000000003" width="225.33333333333337" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="pRQ-LN-Ftl"/>
+>>>>>>> Stashed changes
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Una plataforma digital para casos de personas desaparecidas" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJi-90-hhF">
+<<<<<<< Updated upstream
                                                 <rect key="frame" x="14" y="222" width="247.5" height="130"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="130" id="jid-ZL-Me2"/>
+=======
+                                                <rect key="frame" x="6.3333333333333428" y="266" width="301.33333333333326" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="130" id="32P-Pv-Nmb"/>
+>>>>>>> Stashed changes
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Light" family="MuseoModerno" pointSize="18"/>
                                                 <nil key="textColor"/>
@@ -54,18 +83,26 @@
                                             </label>
                                         </subviews>
                                         <constraints>
+<<<<<<< Updated upstream
                                             <constraint firstItem="owB-ok-Naw" firstAttribute="height" secondItem="gAG-GO-DnM" secondAttribute="height" multiplier="0.5" id="AwW-Ie-XdZ"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wCc-4X-45j">
                                         <rect key="frame" x="62.5" y="367" width="150" height="115"/>
+=======
+                                            <constraint firstItem="owB-ok-Naw" firstAttribute="height" secondItem="gAG-GO-DnM" secondAttribute="height" multiplier="0.5" id="fbJ-yU-lhF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="wCc-4X-45j">
+                                        <rect key="frame" x="82" y="396" width="150" height="125"/>
+>>>>>>> Stashed changes
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-IS-ZDp">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
                                                 <color key="backgroundColor" red="0.3367456794" green="0.4548245668" blue="0.73827493190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="Rv8-I0-C14"/>
-                                                    <constraint firstAttribute="height" constant="50" id="wDV-Ci-yeJ"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ZZ7-ec-SmZ"/>
+                                                    <constraint firstAttribute="width" constant="150" id="eSi-cC-faT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold" family="MuseoModerno" pointSize="18"/>
                                                 <state key="normal" title="Regístrate">
@@ -98,8 +135,13 @@
                                             </button>
                                         </subviews>
                                         <constraints>
+<<<<<<< Updated upstream
                                             <constraint firstItem="VCU-jG-sps" firstAttribute="width" secondItem="Nct-IS-ZDp" secondAttribute="width" id="jKI-z2-3Kn"/>
                                             <constraint firstItem="VCU-jG-sps" firstAttribute="height" secondItem="Nct-IS-ZDp" secondAttribute="height" id="rC0-lz-edS"/>
+=======
+                                            <constraint firstItem="VCU-jG-sps" firstAttribute="height" secondItem="Nct-IS-ZDp" secondAttribute="height" id="Zkl-Lm-0UE"/>
+                                            <constraint firstItem="VCU-jG-sps" firstAttribute="width" secondItem="Nct-IS-ZDp" secondAttribute="width" id="e1d-sk-Nah"/>
+>>>>>>> Stashed changes
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -108,10 +150,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.88619667290000004" green="0.88632434609999999" blue="0.88616865869999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+<<<<<<< Updated upstream
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QGD-z1-pKL" secondAttribute="trailing" constant="50" id="BHM-eD-rGB"/>
                             <constraint firstItem="QGD-z1-pKL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Tk0-ek-8tv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QGD-z1-pKL" secondAttribute="bottom" constant="50" id="amM-kX-baM"/>
                             <constraint firstItem="QGD-z1-pKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nXk-BU-5UL"/>
+=======
+                            <constraint firstAttribute="trailing" secondItem="QGD-z1-pKL" secondAttribute="trailing" constant="50" id="Gvq-1D-Zt3"/>
+                            <constraint firstItem="QGD-z1-pKL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="HiW-Rk-my2"/>
+                            <constraint firstItem="QGD-z1-pKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ZCP-y1-Hem"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QGD-z1-pKL" secondAttribute="bottom" constant="50" id="aPA-ia-nWb"/>
+>>>>>>> Stashed changes
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hOt-D0-ZqL"/>
@@ -128,33 +177,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< Updated upstream
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-UP-Yzp">
                                 <rect key="frame" x="40" y="20" width="295" height="417"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-kN-vzm">
                                         <rect key="frame" x="72.5" y="0.0" width="150" height="150"/>
+=======
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-UP-Yzp">
+                                <rect key="frame" x="40" y="160.66666666666663" width="334" height="565"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-kN-vzm">
+                                        <rect key="frame" x="92" y="0.0" width="150" height="150"/>
+>>>>>>> Stashed changes
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb logo bot" translatesAutoresizingMaskIntoConstraints="NO" id="TWu-4B-9Gi">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                 <constraints>
+<<<<<<< Updated upstream
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="LsI-F8-bkK"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="NX0-Td-aSU"/>
+=======
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="NX0-Td-aSU"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="T37-9c-1VK"/>
+>>>>>>> Stashed changes
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                     </stackView>
+<<<<<<< Updated upstream
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa con tu correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nB-2q-yVc">
                                         <rect key="frame" x="62" y="163" width="171" height="21.5"/>
+=======
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rx6-vb-QUh">
+                                        <rect key="frame" x="88" y="170.00000000000003" width="158" height="10"/>
+                                        <color key="backgroundColor" red="0.88619667290000004" green="0.88632434609999999" blue="0.88616865869999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="oeM-7V-m8P"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa con tu correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nB-2q-yVc">
+                                        <rect key="frame" x="81.666666666666686" y="200.00000000000003" width="171" height="21.666666666666657"/>
+>>>>>>> Stashed changes
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfj-0H-xgz">
+<<<<<<< Updated upstream
                                         <rect key="frame" x="10" y="197.5" width="275" height="34"/>
+=======
+                                        <rect key="frame" x="10" y="241.66666666666663" width="314" height="34"/>
+>>>>>>> Stashed changes
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WgL-qM-gVn">
+<<<<<<< Updated upstream
                                         <rect key="frame" x="10" y="244.5" width="275" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -168,6 +247,28 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="0hA-Q2-D2O"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="4gw-Jb-KyJ"/>
+=======
+                                        <rect key="frame" x="10" y="295.66666666666663" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4U-fm-Duf">
+                                        <rect key="frame" x="88" y="349.66666666666663" width="158" height="10"/>
+                                        <color key="backgroundColor" red="0.88619667290000004" green="0.88632434609999999" blue="0.88616865869999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="e10-KM-qMc"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DPf-Bi-wv8">
+                                        <rect key="frame" x="62.333333333333329" y="379.66666666666674" width="209.33333333333337" height="185.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-br-Kd1">
+                                                <rect key="frame" x="42.333333333333329" y="0.0" width="124.99999999999999" height="41"/>
+                                                <color key="backgroundColor" red="0.3367456794" green="0.4548245668" blue="0.73827493190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="0CJ-Pc-YSY"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="YTq-01-FH9"/>
+>>>>>>> Stashed changes
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="ejS-Cn-1wt"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="fJr-I0-VHg"/>
                                                 </constraints>
@@ -182,13 +283,21 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o con tu cuenta de google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arG-EX-IUK">
+<<<<<<< Updated upstream
                                                 <rect key="frame" x="0.0" y="52" width="209.5" height="21.5"/>
+=======
+                                                <rect key="frame" x="0.0" y="60.999999999999993" width="209.33333333333334" height="21.666666666666664"/>
+>>>>>>> Stashed changes
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybF-dj-hId">
+<<<<<<< Updated upstream
                                                 <rect key="frame" x="42" y="84.5" width="125" height="41"/>
+=======
+                                                <rect key="frame" x="42.333333333333329" y="102.66666666666663" width="124.99999999999999" height="41"/>
+>>>>>>> Stashed changes
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold" family="MuseoModerno" pointSize="18"/>
                                                 <state key="normal" title="Google">
@@ -200,10 +309,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
+<<<<<<< Updated upstream
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="ybF-dj-hId" firstAttribute="height" secondItem="Blm-br-Kd1" secondAttribute="height" id="13h-6L-QQx"/>
                                             <constraint firstItem="ybF-dj-hId" firstAttribute="width" secondItem="Blm-br-Kd1" secondAttribute="width" id="aln-sA-2mL"/>
+=======
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dl-a9-m5i">
+                                                <rect key="frame" x="85.000000000000014" y="163.66666666666663" width="39.666666666666671" height="21.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ybF-dj-hId" firstAttribute="width" secondItem="Blm-br-Kd1" secondAttribute="width" id="MAH-ek-rHH"/>
+                                            <constraint firstItem="ybF-dj-hId" firstAttribute="height" secondItem="Blm-br-Kd1" secondAttribute="height" id="suj-6G-aI9"/>
+>>>>>>> Stashed changes
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -217,9 +339,15 @@
                         <viewLayoutGuide key="safeArea" id="cgc-nn-UnS"/>
                         <color key="backgroundColor" red="0.88619667290000004" green="0.88632434609999999" blue="0.88616865869999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+<<<<<<< Updated upstream
                             <constraint firstItem="cgc-nn-UnS" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mrc-UP-Yzp" secondAttribute="bottom" constant="20" id="IEB-Ju-X6V"/>
                             <constraint firstItem="mrc-UP-Yzp" firstAttribute="top" secondItem="cgc-nn-UnS" secondAttribute="top" constant="20" id="Pj7-xA-Spb"/>
                             <constraint firstItem="cgc-nn-UnS" firstAttribute="trailing" secondItem="mrc-UP-Yzp" secondAttribute="trailing" constant="40" id="Tvk-jk-65h"/>
+=======
+                            <constraint firstItem="cgc-nn-UnS" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mrc-UP-Yzp" secondAttribute="bottom" constant="20" id="SYz-RM-mww"/>
+                            <constraint firstItem="cgc-nn-UnS" firstAttribute="trailing" secondItem="mrc-UP-Yzp" secondAttribute="trailing" constant="40" id="Tvk-jk-65h"/>
+                            <constraint firstItem="mrc-UP-Yzp" firstAttribute="top" secondItem="cgc-nn-UnS" secondAttribute="top" constant="20" id="YQr-fK-xVC"/>
+>>>>>>> Stashed changes
                             <constraint firstItem="mrc-UP-Yzp" firstAttribute="leading" secondItem="cgc-nn-UnS" secondAttribute="leading" constant="40" id="tbY-uM-1Kb"/>
                         </constraints>
                     </view>
@@ -233,7 +361,241 @@
             </objects>
             <point key="canvasLocation" x="1879.7101449275365" y="394.41964285714283"/>
         </scene>
+<<<<<<< Updated upstream
         <!--View Controller Registrar-->
+=======
+        <!--Info-->
+        <scene sceneID="gGW-5z-If8">
+            <objects>
+                <viewController id="G4W-vg-fgd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7bD-6d-2oN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t1J-xl-CZT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="info.circle.fill" catalog="system" id="znN-u1-jxa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydz-0b-gJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5174" y="394"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="Wdg-fc-Oqk">
+            <objects>
+                <tableViewController id="zkN-X6-Bx2" customClass="TableViewControllerGuardar" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iPs-eT-rjU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SIl-sg-hep">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SIl-sg-hep" id="yVb-P7-fGz">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zkN-X6-Bx2" id="h27-AG-NdQ"/>
+                            <outlet property="delegate" destination="zkN-X6-Bx2" id="sTx-RA-g6w"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="NXv-6x-l27"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k07-6L-U0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3919" y="1356"/>
+        </scene>
+        <!--Guardado-->
+        <scene sceneID="H5e-sL-fwD">
+            <objects>
+                <navigationController id="C5M-jm-2AT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guardado" image="folder.fill" catalog="system" id="HpO-qH-sdn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tLc-lM-2eJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zkN-X6-Bx2" kind="relationship" relationship="rootViewController" id="tpp-wf-A5J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJ6-eZ-kaG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3026" y="1356"/>
+        </scene>
+        <!--Compartir-->
+        <scene sceneID="eC4-JU-lNT">
+            <objects>
+                <viewController id="dVm-xm-ZFs" customClass="ViewControllerInicio" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K9j-OB-tJX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTk-rq-8Vu">
+                                <rect key="frame" x="205" y="329" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logOut:" destination="dVm-xm-ZFs" eventType="touchUpInside" id="9WD-TB-BI0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJh-cx-RL4">
+                                <rect key="frame" x="112" y="176" width="212" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="237-67-ov5"/>
+                        <color key="backgroundColor" red="1" green="0.62520521880000002" blue="0.47803622480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Compartir" image="shift.fill" catalog="system" id="uyL-QA-tQ8"/>
+                    <connections>
+                        <outlet property="emaillbl" destination="HJh-cx-RL4" id="z7S-yI-nsC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Th-BQ-ZnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4187" y="675"/>
+        </scene>
+        <!--BotDesaparecidx-->
+        <scene sceneID="oxh-gS-3pe">
+            <objects>
+                <tableViewController id="GMu-HN-GiH" customClass="TableViewControllerInicio" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WIV-N1-xlU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" textLabel="QX3-tp-6Bm" detailTextLabel="fVN-gk-S4g" style="IBUITableViewCellStyleSubtitle" id="d4p-nw-mga">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d4p-nw-mga" id="Iml-0v-uGa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QX3-tp-6Bm">
+                                            <rect key="frame" x="20" y="8.9999999999999982" width="33" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fVN-gk-S4g">
+                                            <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GMu-HN-GiH" id="zNx-iA-Gas"/>
+                            <outlet property="delegate" destination="GMu-HN-GiH" id="f0W-XX-OR2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="BotDesaparecidx" largeTitleDisplayMode="always" id="keN-c5-MQw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7S6-yq-uzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4577" y="-927"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="unL-Iy-ie1">
+            <objects>
+                <tableViewController id="KCy-MX-il8" customClass="TableViewControllerBuscar" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qtf-d1-vID">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1ij-oj-xNB">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ij-oj-xNB" id="Fhy-Di-lEz">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KCy-MX-il8" id="swE-jI-tW1"/>
+                            <outlet property="delegate" destination="KCy-MX-il8" id="Fia-eC-QAZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="UOB-o6-9CX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJD-C0-3o5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5104" y="-249"/>
+        </scene>
+        <!--Buscar-->
+        <scene sceneID="IGW-TF-LGM">
+            <objects>
+                <navigationController id="t4o-wV-YtB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Buscar" image="magnifyingglass" catalog="system" id="kIc-oK-DVo"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jlY-BD-OYA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KCy-MX-il8" kind="relationship" relationship="rootViewController" id="nsZ-FJ-TXH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jm-co-iXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4188" y="-249"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="cga-fn-KwA">
+            <objects>
+                <navigationController id="BLr-u0-mLL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inicio" image="house.fill" catalog="system" id="gb4-eH-0Oh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="0Yq-EY-a7c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96.666666666666657"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="32"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GMu-HN-GiH" kind="relationship" relationship="rootViewController" id="mh9-tM-WfH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snU-Pw-uyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3681" y="-927"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="RxJ-O0-n21">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeViewController" id="FEX-ie-wNI" customClass="HomeViewController" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6v6-sd-eeh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BLr-u0-mLL" kind="relationship" relationship="viewControllers" id="UzG-ev-v5v"/>
+                        <segue destination="t4o-wV-YtB" kind="relationship" relationship="viewControllers" id="bHc-bL-uxp"/>
+                        <segue destination="dVm-xm-ZFs" kind="relationship" relationship="viewControllers" id="Lrf-Wa-rOP"/>
+                        <segue destination="G4W-vg-fgd" kind="relationship" relationship="viewControllers" id="D8b-oS-ewJ"/>
+                        <segue destination="C5M-jm-2AT" kind="relationship" relationship="viewControllers" id="dgI-S6-0jQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDO-5V-U01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2807" y="78"/>
+        </scene>
+        <!--uwu-->
+>>>>>>> Stashed changes
         <scene sceneID="jhM-UU-9jQ">
             <objects>
                 <viewController id="t5X-Yr-lGY" customClass="ViewControllerRegistrar" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
@@ -241,6 +603,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< Updated upstream
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Pua-d9-VAx">
                                 <rect key="frame" x="40" y="20" width="295" height="503"/>
                                 <subviews>
@@ -252,9 +615,57 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="TVT-4P-OYb"/>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="fQa-WY-Qhp"/>
+=======
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pua-d9-VAx">
+                                <rect key="frame" x="40" y="160.66666666666663" width="334" height="645"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb logo bot" translatesAutoresizingMaskIntoConstraints="NO" id="WlX-jU-RkE">
+                                        <rect key="frame" x="92" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="KTO-b1-A6y"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Mvc-Uf-hDO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l0S-xS-FcC">
+                                        <rect key="frame" x="0.0" y="170.00000000000003" width="334" height="291.66666666666674"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa con tu correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUE-ma-OOD">
+                                                <rect key="frame" x="81.666666666666686" y="0.0" width="171" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3q1-dE-H5y">
+                                                <rect key="frame" x="10" y="41.666666666666629" width="314" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="DMM-Tt-Uvv"/>
+>>>>>>> Stashed changes
                                                 </constraints>
-                                            </imageView>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombres" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DTA-q1-CnD">
+                                                <rect key="frame" x="10" y="95.666666666666629" width="314" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Txh-qU-peF">
+                                                <rect key="frame" x="10" y="149.66666666666663" width="314" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B0Y-dl-55E">
+                                                <rect key="frame" x="10" y="203.66666666666669" width="314" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yd2-hp-SYk">
+                                                <rect key="frame" x="10" y="257.66666666666669" width="314" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
                                         </subviews>
+<<<<<<< Updated upstream
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CLp-8u-RQv">
                                         <rect key="frame" x="0.0" y="163" width="295" height="231.5"/>
@@ -312,6 +723,26 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04u-mc-RPN">
                                                 <rect key="frame" x="29.5" y="0.0" width="150" height="30"/>
+=======
+                                        <constraints>
+                                            <constraint firstItem="Txh-qU-peF" firstAttribute="height" secondItem="3q1-dE-H5y" secondAttribute="height" id="1d6-eW-dRU"/>
+                                            <constraint firstItem="yd2-hp-SYk" firstAttribute="height" secondItem="3q1-dE-H5y" secondAttribute="height" id="41U-lV-7Wc"/>
+                                            <constraint firstItem="DTA-q1-CnD" firstAttribute="height" secondItem="3q1-dE-H5y" secondAttribute="height" id="4xF-wU-pfS"/>
+                                            <constraint firstItem="DTA-q1-CnD" firstAttribute="width" secondItem="3q1-dE-H5y" secondAttribute="width" id="5La-f3-bwe"/>
+                                            <constraint firstItem="3q1-dE-H5y" firstAttribute="leading" secondItem="l0S-xS-FcC" secondAttribute="leading" constant="10" id="6fi-E1-Qfo"/>
+                                            <constraint firstItem="B0Y-dl-55E" firstAttribute="height" secondItem="3q1-dE-H5y" secondAttribute="height" id="DWB-TT-z0e"/>
+                                            <constraint firstAttribute="trailing" secondItem="3q1-dE-H5y" secondAttribute="trailing" constant="10" id="Hwc-M6-INW"/>
+                                            <constraint firstItem="B0Y-dl-55E" firstAttribute="width" secondItem="3q1-dE-H5y" secondAttribute="width" id="vRk-N4-SOQ"/>
+                                            <constraint firstItem="yd2-hp-SYk" firstAttribute="width" secondItem="3q1-dE-H5y" secondAttribute="width" id="wjZ-zI-EWo"/>
+                                            <constraint firstItem="Txh-qU-peF" firstAttribute="width" secondItem="3q1-dE-H5y" secondAttribute="width" id="xlZ-gj-bAy"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vnv-nb-BMn">
+                                        <rect key="frame" x="62.333333333333329" y="481.66666666666669" width="209.33333333333337" height="163.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04u-mc-RPN">
+                                                <rect key="frame" x="29.666666666666671" y="0.0" width="150" height="30"/>
+>>>>>>> Stashed changes
                                                 <color key="backgroundColor" red="0.3367456794" green="0.4548245668" blue="0.73827493190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="JPo-PA-klX"/>
@@ -328,13 +759,21 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o con tu cuenta de google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTc-dm-nKP">
+<<<<<<< Updated upstream
                                                 <rect key="frame" x="0.0" y="37" width="209.5" height="21.5"/>
+=======
+                                                <rect key="frame" x="0.0" y="50" width="209.33333333333334" height="21.666666666666671"/>
+>>>>>>> Stashed changes
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLA-TA-1Y3">
+<<<<<<< Updated upstream
                                                 <rect key="frame" x="29.5" y="65.5" width="150" height="30"/>
+=======
+                                                <rect key="frame" x="29.666666666666671" y="91.666666666666629" width="150" height="30"/>
+>>>>>>> Stashed changes
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold" family="MuseoModerno" pointSize="18"/>
                                                 <state key="normal" title="Google">
@@ -346,25 +785,49 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
+<<<<<<< Updated upstream
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="xLA-TA-1Y3" firstAttribute="height" secondItem="04u-mc-RPN" secondAttribute="height" id="6S4-gA-rjd"/>
                                             <constraint firstItem="xLA-TA-1Y3" firstAttribute="width" secondItem="04u-mc-RPN" secondAttribute="width" id="96M-2A-mRB"/>
+=======
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4k-HD-sTI">
+                                                <rect key="frame" x="85.000000000000014" y="141.66666666666663" width="39.666666666666671" height="21.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xLA-TA-1Y3" firstAttribute="height" secondItem="04u-mc-RPN" secondAttribute="height" id="4dT-oG-WQ5"/>
+                                            <constraint firstItem="xLA-TA-1Y3" firstAttribute="width" secondItem="04u-mc-RPN" secondAttribute="width" id="BgV-CY-gkF"/>
+>>>>>>> Stashed changes
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
+<<<<<<< Updated upstream
                                     <constraint firstItem="CLp-8u-RQv" firstAttribute="width" secondItem="Pua-d9-VAx" secondAttribute="width" id="NeW-ar-Qgx"/>
+=======
+                                    <constraint firstItem="l0S-xS-FcC" firstAttribute="width" secondItem="Pua-d9-VAx" secondAttribute="width" id="8az-5D-onN"/>
+>>>>>>> Stashed changes
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jKH-5j-VhF"/>
                         <color key="backgroundColor" red="0.88619667290000004" green="0.88632434609999999" blue="0.88616865869999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+<<<<<<< Updated upstream
                             <constraint firstItem="Pua-d9-VAx" firstAttribute="top" secondItem="jKH-5j-VhF" secondAttribute="top" constant="20" id="4RB-iY-7jq"/>
                             <constraint firstItem="Pua-d9-VAx" firstAttribute="leading" secondItem="jKH-5j-VhF" secondAttribute="leading" constant="40" id="Bqg-KU-ypg"/>
                             <constraint firstItem="jKH-5j-VhF" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pua-d9-VAx" secondAttribute="bottom" constant="20" id="Y1Z-Cf-aB9"/>
                             <constraint firstItem="jKH-5j-VhF" firstAttribute="trailing" secondItem="Pua-d9-VAx" secondAttribute="trailing" constant="40" id="zGr-nD-KKu"/>
+=======
+                            <constraint firstItem="jKH-5j-VhF" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pua-d9-VAx" secondAttribute="bottom" constant="20" id="Aes-yc-wXf"/>
+                            <constraint firstItem="jKH-5j-VhF" firstAttribute="trailing" secondItem="Pua-d9-VAx" secondAttribute="trailing" constant="40" id="DV1-bV-dtv"/>
+                            <constraint firstItem="Pua-d9-VAx" firstAttribute="top" secondItem="jKH-5j-VhF" secondAttribute="top" constant="20" id="irm-kb-j2T"/>
+                            <constraint firstItem="Pua-d9-VAx" firstAttribute="leading" secondItem="jKH-5j-VhF" secondAttribute="leading" constant="40" id="lUT-sc-nvF"/>
+>>>>>>> Stashed changes
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cFQ-Wa-XB1"/>
@@ -378,7 +841,12 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="W0t-FV-a48" sceneMemberID="viewController">
                     <toolbarItems/>
+<<<<<<< Updated upstream
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="26r-O2-eDD">
+=======
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="26r-O2-eDD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96.666666666666657"/>
+>>>>>>> Stashed changes
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
