@@ -28,7 +28,7 @@
                         </userGuides>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="QGD-z1-pKL">
-                                <rect key="frame" x="50" y="140.5" width="314" height="968"/>
+                                <rect key="frame" x="50" y="140" width="314" height="968"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-GO-DnM">
                                         <rect key="frame" x="37.5" y="0.0" width="239.5" height="739"/>
@@ -134,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-UP-Yzp">
-                                <rect key="frame" x="40" y="150.5" width="334" height="662.5"/>
+                                <rect key="frame" x="40" y="150" width="334" height="662.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-kN-vzm">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="150"/>
@@ -500,7 +500,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pua-d9-VAx">
-                                <rect key="frame" x="40" y="150.5" width="324" height="729.5"/>
+                                <rect key="frame" x="40" y="150" width="324" height="729.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNZ-BX-zoU">
                                         <rect key="frame" x="0.0" y="0.0" width="324" height="150"/>
