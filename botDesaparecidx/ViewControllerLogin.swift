@@ -12,16 +12,14 @@ class ViewControllerLogin: UIViewController {
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfContraseña: UITextField!
     @IBOutlet weak var btLogIn: UIButton!
-    @IBOutlet weak var lbError: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        lbError.alpha = 0
         let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
         view.addGestureRecognizer(tap)
-        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Atrás", style: .plain, target: nil, action: nil)
         
     }
         
@@ -30,22 +28,10 @@ class ViewControllerLogin: UIViewController {
     }
     
     // MARK: -Funciones de Log In
-    func isPasswordValid(_ password: String) -> Bool {
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
-        return passwordTest.evaluate(with: password)
-    }
-    
     func validateFields() -> String? {
         if tfEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" || tfContraseña.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" {
             return "Por favor llene los campos"
         }
-        //Check if password is secure
-        let cleanedPassword = tfContraseña.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        if isPasswordValid(cleanedPassword) == false {
-            return "Por favor revise que su contraseña sea correcta"
-        }
-        
         return nil
     }
     
@@ -53,8 +39,9 @@ class ViewControllerLogin: UIViewController {
         //Validar text fields
         let error = validateFields()
         if error != nil {
-            lbError.text = error!
-            lbError.alpha = 1
+            let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         //Crear versiones limpias de los campos
         let email = tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -64,12 +51,14 @@ class ViewControllerLogin: UIViewController {
             (result, error) in
             if error != nil{
                 //No pudo acceder
-                self.lbError.text = error!.localizedDescription
-                self.lbError.alpha = 1
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             } else {
                 if !result!.user.isEmailVerified {
-                    self.lbError.text = "Verifica tu correo antes de ingresar"
-                    self.lbError.alpha = 1
+                    let alert = UIAlertController(title: "Error", message: "Verifica tu correo antes de ingresar", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 else{
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)

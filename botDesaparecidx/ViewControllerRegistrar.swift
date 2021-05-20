@@ -9,6 +9,10 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+protocol protocoloChecaRegistro{
+    func checaRegistro(registrado : Bool)
+}
+
 class ViewControllerRegistrar: UIViewController {
     @IBOutlet weak var tfNombre: UITextField!
     @IBOutlet weak var tfApellido: UITextField!
@@ -16,21 +20,15 @@ class ViewControllerRegistrar: UIViewController {
     @IBOutlet weak var tfContrasena: UITextField!
     @IBOutlet weak var tfConfirmarContra: UITextField!
     @IBOutlet weak var btRegistrarse: UIButton!
-    @IBOutlet weak var lbError: UILabel!
     
     var ref : DatabaseReference!
-    
+    var delegado : protocoloChecaRegistro!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
         view.addGestureRecognizer(tap)
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
-    
     
     @IBAction func quitaTeclado(){
         view.endEditing(true)
@@ -84,7 +82,9 @@ class ViewControllerRegistrar: UIViewController {
         let error = validateInputs()
         
         if error != nil{
-            lbError.text = error
+            let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         else{
             ref = Database.database().reference()
@@ -96,21 +96,22 @@ class ViewControllerRegistrar: UIViewController {
               
                 //checar errores
                 if err != nil {
-                    self.lbError.text = "error creando usuario"
+                    let alert = UIAlertController(title: "Error", message: err?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 else{
                     self.ref.child("USUARIOS_APP/\(result!.user.uid)").setValue(["nombre" : nombres,
                         "apellidos" : apellidos,
-                        "contrasena" : contrasena,
                         "correo" : correo
                     ])
-                    self.lbError.text = "Usuario creado!"
                     result!.user.sendEmailVerification { (error) in
                         if error != nil {
                             print("error enviando correo")
                         }
                     }
                     self.navigationController?.popViewController(animated: true)
+                    self.delegado.checaRegistro(registrado: true)
                 }
             }
         }
