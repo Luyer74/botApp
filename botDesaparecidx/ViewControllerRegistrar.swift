@@ -92,11 +92,11 @@ class ViewControllerRegistrar: UIViewController {
             let nombres = tfNombre.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let apellidos = tfApellido.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let contrasena = tfContrasena.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            Auth.auth().createUser(withEmail: correo, password: contrasena) { (result, err) in
+            Auth.auth().createUser(withEmail: correo, password: contrasena) { [self] (result, err) in
               
                 //checar errores
                 if err != nil {
-                    let alert = UIAlertController(title: "Error", message: err?.localizedDescription, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Error", message: checarErrores(err! as NSError), preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
@@ -114,6 +114,21 @@ class ViewControllerRegistrar: UIViewController {
                     self.delegado.checaRegistro(registrado: true)
                 }
             }
+        }
+    }
+    
+    func checarErrores(_ error : NSError) -> String{
+        let errorAuthStatus = AuthErrorCode.init(rawValue: error._code)!
+        
+        switch errorAuthStatus{
+        case .invalidEmail:
+            return "Tu correo es inválido"
+        case .userNotFound:
+            return "No existe este usuario"
+        case .emailAlreadyInUse:
+            return "Este correo ya está registrado"
+        default:
+            return "Error desconocido"
         }
     }
 }

@@ -51,7 +51,7 @@ class ViewControllerLogin: UIViewController {
             (result, error) in
             if error != nil{
                 //No pudo acceder
-                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: self.checarErrores(error! as NSError), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             } else {
@@ -70,14 +70,19 @@ class ViewControllerLogin: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func checarErrores(_ error : NSError) -> String{
+        let errorAuthStatus = AuthErrorCode.init(rawValue: error._code)!
+        
+        switch errorAuthStatus{
+        case .invalidEmail:
+            return "Tu correo es inválido o no existe"
+        case .wrongPassword:
+            return "Tu contraseña es equivocada"
+        case .userNotFound:
+            return "No existe un usuario con ese correo"
+        default:
+            return "Error desconocido"
+        }
     }
-    */
 
 }
