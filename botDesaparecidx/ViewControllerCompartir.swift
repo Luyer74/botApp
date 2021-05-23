@@ -6,12 +6,26 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class ViewControllerCompartir: UIViewController {
-
+    //@IBOutlet weak var emaillbl: UILabel!
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfSexo: UITextField!
+    @IBOutlet weak var tfEdad: UITextField!
+    @IBOutlet weak var tfUltLocacion: UITextField!
+    @IBOutlet weak var tfFecha: UITextField!
+    @IBOutlet weak var tfRasgos: UITextField!
+    @IBOutlet weak var imgFoto: UIImageView!
+    @IBOutlet weak var tfComentarios: UITextField!
+    @IBOutlet weak var tfContacto: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        /*if Auth.auth().currentUser != nil {
+            emaillbl.text = Auth.auth().currentUser?.email
+        }*/
         // Do any additional setup after loading the view.
     }
     
@@ -25,5 +39,17 @@ class ViewControllerCompartir: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    /*
+    @IBAction func logOut(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+       } catch let signOutError as NSError {
+         print ("Error signing out: %@", signOutError)
+       }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let registrationController = storyboard.instantiateViewController(identifier: "RegistrationController")
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(registrationController)
+    }*/
 }
