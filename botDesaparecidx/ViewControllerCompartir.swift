@@ -21,15 +21,45 @@ class ViewControllerCompartir: UIViewController {
     @IBOutlet weak var tfComentarios: UITextField!
     @IBOutlet weak var tfContacto: UITextField!
     
+    let datePicker =  UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         /*if Auth.auth().currentUser != nil {
             emaillbl.text = Auth.auth().currentUser?.email
         }*/
         // Do any additional setup after loading the view.
+        createDatePicker()
     }
     
-
+    func createDatePicker() {
+        //toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //bar button Done
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        toolbar.setItems([doneBtn], animated: true)
+        //asignar toolbar
+        tfFecha.inputAccessoryView = toolbar
+        
+        //asignar datePicker al text field
+        tfFecha.inputView = datePicker
+        
+        datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
+    }
+    
+    @objc func donePressed(){
+        //formatear fecha
+        let format = DateFormatter()
+        format.dateStyle = .medium
+        format.timeStyle = .none
+        
+        tfFecha.text = format.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+    
     /*
     // MARK: - Navigation
 

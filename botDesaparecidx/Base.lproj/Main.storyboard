@@ -419,10 +419,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pGx-RN-cFh" userLabel="Fecha de desaparicion">
-                                        <rect key="frame" x="0.0" y="351" width="354" height="34"/>
+                                        <rect key="frame" x="0.0" y="351" width="354" height="43"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57b-nk-YBN">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57b-nk-YBN">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="43"/>
                                                 <string key="text">Fecha de 
 desaparición:</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -430,14 +430,14 @@ desaparición:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYY-Ym-8rK">
-                                                <rect key="frame" x="182" y="0.0" width="172" height="34"/>
+                                                <rect key="frame" x="182" y="0.0" width="172" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-Jo-VkO" userLabel="Rasgos">
-                                        <rect key="frame" x="0.0" y="395" width="354" height="34"/>
+                                        <rect key="frame" x="0.0" y="404" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rasgos Particulares:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNH-gn-KXy">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="34"/>
@@ -453,18 +453,17 @@ desaparición:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WxA-Ee-kLo" userLabel="Foto">
-                                        <rect key="frame" x="0.0" y="439" width="354" height="162"/>
+                                        <rect key="frame" x="0.0" y="448" width="354" height="153"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZy-QY-8Rh">
-                                                <rect key="frame" x="0.0" y="70.5" width="172" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="66" width="172" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb logo bot" translatesAutoresizingMaskIntoConstraints="NO" id="Mq4-C6-Khg">
-                                                <rect key="frame" x="182" y="21" width="172" height="120"/>
+                                                <rect key="frame" x="182" y="16.5" width="172" height="120"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="RBL-Gt-A8v"/>
                                                     <constraint firstAttribute="height" constant="120" id="wu8-3f-qLg"/>
                                                 </constraints>
                                             </imageView>
@@ -645,7 +644,7 @@ desaparición:</string>
                 <navigationController id="BLr-u0-mLL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Inicio" image="house.fill" catalog="system" id="gb4-eH-0Oh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="0Yq-EY-a7c">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="32"/>
@@ -850,7 +849,7 @@ desaparición:</string>
                 <navigationController storyboardIdentifier="RegistrationController" automaticallyAdjustsScrollViewInsets="NO" id="W0t-FV-a48" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="26r-O2-eDD">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.88627451660000001" green="0.88627451660000001" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
