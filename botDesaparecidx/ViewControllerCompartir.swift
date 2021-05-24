@@ -30,6 +30,13 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
         }*/
         // Do any additional setup after loading the view.
         createDatePicker()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
+        view.addGestureRecognizer(tap)
+
+    }
+    
+    @IBAction func quitaTeclado(){
+        view.endEditing(true)
     }
     
     func createDatePicker() {
