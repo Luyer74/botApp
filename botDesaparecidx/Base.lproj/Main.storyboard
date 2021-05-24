@@ -29,7 +29,7 @@
                         </userGuides>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="QGD-z1-pKL">
-                                <rect key="frame" x="50" y="140" width="314" height="585"/>
+                                <rect key="frame" x="50" y="140.5" width="314" height="585"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-GO-DnM">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="356"/>
@@ -41,7 +41,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BotDesaparecidx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFf-r1-6Io">
-                                                <rect key="frame" x="53" y="207" width="208.5" height="30"/>
+                                                <rect key="frame" x="44.5" y="207" width="225.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="hr2-4z-WQx"/>
                                                 </constraints>
@@ -135,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-UP-Yzp">
-                                <rect key="frame" x="40" y="160" width="334" height="548.5"/>
+                                <rect key="frame" x="40" y="160.5" width="334" height="564.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-kN-vzm">
                                         <rect key="frame" x="92" y="0.0" width="150" height="150"/>
@@ -180,10 +180,10 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DPf-Bi-wv8">
-                                        <rect key="frame" x="62.5" y="379.5" width="209.5" height="169"/>
+                                        <rect key="frame" x="62.5" y="379.5" width="209.5" height="185"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-br-Kd1">
-                                                <rect key="frame" x="42" y="0.0" width="125" height="33"/>
+                                                <rect key="frame" x="42" y="0.0" width="125" height="41"/>
                                                 <color key="backgroundColor" red="0.3367456794" green="0.4548245668" blue="0.73827493190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="eNt-Ah-TfM"/>
@@ -205,13 +205,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o con tu cuenta de google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arG-EX-IUK">
-                                                <rect key="frame" x="0.0" y="53" width="209.5" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="61" width="209.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybF-dj-hId">
-                                                <rect key="frame" x="42" y="94.5" width="125" height="33"/>
+                                                <rect key="frame" x="42" y="102.5" width="125" height="41"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold" family="MuseoModerno" pointSize="18"/>
                                                 <state key="normal" title="Google">
@@ -224,7 +224,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dl-a9-m5i">
-                                                <rect key="frame" x="85" y="147.5" width="39.5" height="21.5"/>
+                                                <rect key="frame" x="85" y="163.5" width="39.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
@@ -463,9 +463,13 @@ desaparición:</string>
                                             </label>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb logo bot" translatesAutoresizingMaskIntoConstraints="NO" id="Mq4-C6-Khg">
                                                 <rect key="frame" x="182" y="16.5" width="172" height="120"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="wu8-3f-qLg"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="7zA-gK-Imy" appends="YES" id="1WT-5j-tpZ"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -544,6 +548,11 @@ desaparición:</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Th-BQ-ZnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7zA-gK-Imy">
+                    <connections>
+                        <action selector="agregaFoto:" destination="dVm-xm-ZFs" id="Nud-lo-25q"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4186.9565217391309" y="675"/>
         </scene>
@@ -644,7 +653,7 @@ desaparición:</string>
                 <navigationController id="BLr-u0-mLL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Inicio" image="house.fill" catalog="system" id="gb4-eH-0Oh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="0Yq-EY-a7c">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="32"/>
@@ -688,7 +697,7 @@ desaparición:</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pua-d9-VAx">
-                                <rect key="frame" x="40" y="160" width="334" height="674.5"/>
+                                <rect key="frame" x="40" y="160.5" width="334" height="674.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNZ-BX-zoU">
                                         <rect key="frame" x="92" y="0.0" width="150" height="150"/>
@@ -849,7 +858,7 @@ desaparición:</string>
                 <navigationController storyboardIdentifier="RegistrationController" automaticallyAdjustsScrollViewInsets="NO" id="W0t-FV-a48" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="26r-O2-eDD">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.88627451660000001" green="0.88627451660000001" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">

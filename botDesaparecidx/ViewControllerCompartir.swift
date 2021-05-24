@@ -9,7 +9,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class ViewControllerCompartir: UIViewController {
+class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //@IBOutlet weak var emaillbl: UILabel!
     @IBOutlet weak var tfNombre: UITextField!
     @IBOutlet weak var tfSexo: UITextField!
@@ -60,6 +60,23 @@ class ViewControllerCompartir: UIViewController {
         self.view.endEditing(true)
     }
     
+    @IBAction func agregaFoto(_ sender: UITapGestureRecognizer) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    // MARK: - Metodos del delegado del Image Picker Controller
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let foto = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        imgFoto.image = foto
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
