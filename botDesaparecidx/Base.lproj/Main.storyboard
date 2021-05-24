@@ -270,8 +270,74 @@
                     <view key="view" contentMode="scaleToFill" id="7bD-6d-2oN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-4S-mJf">
+                                <rect key="frame" x="30" y="144" width="354" height="569"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="004-Wu-HWv">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="281"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quienes somos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejx-Xo-Uec">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69r-8q-tFm">
+                                                <rect key="frame" x="0.0" y="60.5" width="354" height="220.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="15" bottom="8" trailing="15"/>
+                                                <string key="text">BotDesaparecidxs es un proyecto
+desarrollado por alumnos del 
+Tecnológico de Monterrey con la
+finalidad de recopilar información
+acerca de personas desaparecidas, a
+través de redes sociales y por entradas 
+de los usuarios, con la finalidad de 
+mejorar el proceso de su búsqueda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mok-f4-LrH">
+                                        <rect key="frame" x="0.0" y="311" width="354" height="258"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cómo funcionamos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AE-Uz-24A">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="46"/>
+                                                <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oJ-kk-o2i">
+                                                <rect key="frame" x="0.0" y="61" width="354" height="197"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="15" bottom="8" trailing="15"/>
+                                                <string key="text">Utilizamos la API de Twitter
+para encontrar y difundir 
+casos en nuestras redes sociales.
+Contamos con miles de seguidores, por
+lo que las visualizaciones de casos 
+aumentan exponencialmente con
+nuestra ayuda. ¡Siguenos!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t1J-xl-CZT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bVb-4S-mJf" firstAttribute="leading" secondItem="t1J-xl-CZT" secondAttribute="leading" constant="30" id="3yf-Qi-dT8"/>
+                            <constraint firstItem="t1J-xl-CZT" firstAttribute="trailing" secondItem="bVb-4S-mJf" secondAttribute="trailing" constant="30" id="UM6-Hp-ZEf"/>
+                            <constraint firstItem="t1J-xl-CZT" firstAttribute="bottom" secondItem="bVb-4S-mJf" secondAttribute="bottom" constant="100" id="bOn-b8-IXm"/>
+                            <constraint firstItem="bVb-4S-mJf" firstAttribute="top" secondItem="t1J-xl-CZT" secondAttribute="top" constant="100" id="izY-FP-NcD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.circle.fill" catalog="system" id="znN-u1-jxa"/>
                 </viewController>
