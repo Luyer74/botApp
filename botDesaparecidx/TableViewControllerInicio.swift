@@ -10,49 +10,24 @@ import FirebaseAuth
 import Firebase
 import SDWebImage
 
-class TableViewControllerInicio: UITableViewController {
+class TableViewControllerInicio: UITableViewController{
 
     var ref : DatabaseReference!
     var listaCasos = [tweet]()
+    var fecha = Date()
+    var daysPassed = 0
+    var formater = DateFormatter()
+    var isPaginating = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         ref = Database.database().reference()
-        var datosCasos = [[String : String]]()
-        getInitialData() { datos in
-            let group = DispatchGroup()
-            datosCasos = datos
-            for i in 1...datos.count{
-                group.enter()
-                let id_usuario = datos[i-1]["id_usuario"]!
-                self.getUserName(userID: id_usuario, completion: { user_name , location in
-                    datosCasos[i-1]["nombre_usuario"] = user_name
-                    datosCasos[i-1]["lugar"] = location
-                    group.leave()
-                })
-            }
-            
-            for i in 1...datos.count{
-                group.enter()
-                let id_tweet = datos[i-1]["tweet_id"]!
-                self.getImageLink(tweetID: id_tweet, completion: {link in
-                    datosCasos[i-1]["link_imagen"] = link
-                    group.leave()
-                })
-            }
-            
-            group.notify(queue: DispatchQueue.global(), execute: {
-                self.insertData(datosCasos: datosCasos)
-                print("listo!")
-                self.reloadTable()
-            })
-        }
+        loadData()
     }
 
     // MARK: - Table view data source
@@ -127,19 +102,68 @@ class TableViewControllerInicio: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func loadData(){
+        isPaginating = true
+        var datosCasos = [[String : String]]()
+        getInitialData() { datos in
+            let group = DispatchGroup()
+            datosCasos = datos
+            if datosCasos.count == 0{
+                self.isPaginating = false
+                return
+            }
+            for i in 1...datos.count{
+                group.enter()
+                let id_usuario = datos[i-1]["id_usuario"]!
+                self.getUserName(userID: id_usuario, completion: { user_name , location in
+                    datosCasos[i-1]["nombre_usuario"] = user_name
+                    datosCasos[i-1]["lugar"] = location
+                    group.leave()
+                })
+            }
+            
+            for i in 1...datos.count{
+                group.enter()
+                let id_tweet = datos[i-1]["tweet_id"]!
+                self.getImageLink(tweetID: id_tweet, completion: {link in
+                    datosCasos[i-1]["link_imagen"] = link
+                    group.leave()
+                })
+            }
+            
+            group.notify(queue: DispatchQueue.global(), execute: {
+                self.insertData(datosCasos: datosCasos)
+                print("listo!")
+                self.reloadTable()
+                self.isPaginating = false
+            })
+        }
+    }
+    
+    
     func getInitialData(completion: @escaping ([[String : String]]) -> Void){
         var initData = [[String : String]]()
-        ref.child("TWEETS").queryOrdered(byChild: "date_created").queryLimited(toLast: 50).observe(.value) { (snapshot) in
+        var cont = 0
+        let date_str = getDate()
+        print(date_str)
+        ref.child("TWEETS").queryOrdered(byChild: "date_created").queryStarting(atValue: date_str).queryEnding(atValue: date_str).observe(.value) { (snapshot) in
             for snap in snapshot.children{
                 let data = snap as! DataSnapshot
                 let tweetID = data.key
                 if let valueDictionary = data.value as? [AnyHashable:AnyObject]{
-                    let userID = valueDictionary["user"] as! String
+                    var userID = ""
+                    if let userIDini = valueDictionary["user"] as? NSNumber{
+                        userID = userIDini.stringValue
+                    }
+                    else if let userIDini = valueDictionary["user"] as? String{
+                        userID = userIDini
+                    }
                     let fechacreado = valueDictionary["date_created"] as! String
                     let tweet_text = valueDictionary["tweet_text"] as! String
                     let dict = ["tweet_id" : tweetID, "fecha_creado" : fechacreado, "id_usuario" : userID, "tweet_text" : tweet_text]
                     initData.insert(dict, at: 0)
                 }
+                cont = cont + 1
             }
             completion(initData)
         }
@@ -147,11 +171,17 @@ class TableViewControllerInicio: UITableViewController {
     
     func getUserName(userID : String, completion: @escaping (String, String) -> Void){
         self.ref.child("USERS/\(userID)").observeSingleEvent(of: .value, with: {(snapshot) in
+            var nombre_usuario = " "
+            var lugar = " "
             if let valueDictionary = snapshot.value as? [AnyHashable:AnyObject]{
-                let user_name = valueDictionary["name"] as! String
-                let location = valueDictionary["location"] as! String
-                completion(user_name, location)
+                if let user_name = valueDictionary["name"] as? String {
+                    nombre_usuario = user_name
+                }
+                if let location = valueDictionary["location"] as? String{
+                    lugar = location
+                }
             }
+            completion(nombre_usuario, lugar)
         })
     }
     
@@ -174,9 +204,32 @@ class TableViewControllerInicio: UITableViewController {
     }
     
     func insertData(datosCasos : [[String : String]]){
-        for i in 1...50{
+        for i in 1...datosCasos.count{
             let tw = tweet(tweet_text: datosCasos[i-1]["tweet_text"]!, fecha_creado: datosCasos[i-1]["fecha_creado"]!, imagen_link : datosCasos[i-1]["link_imagen"])
             self.listaCasos.append(tw)
         }
     }
+    
+    func getDate() -> String{
+        let nextDate = Calendar.current.date(byAdding: .day, value: daysPassed, to: fecha)
+        formater.dateFormat = "yyyy-MM-dd"
+        formater.timeZone = TimeZone(abbreviation: "UTC")
+        return formater.string(from: nextDate!)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if tableView.contentSize.height == 0{
+            return
+        }
+        
+        guard !isPaginating else{
+            return
+        }
+        let position = scrollView.contentOffset.y
+        if position > (tableView.contentSize.height+180-scrollView.frame.size.height){
+            daysPassed = daysPassed - 1
+            loadData()
+        }
+    }
+    
 }
