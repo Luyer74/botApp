@@ -24,6 +24,8 @@
 		FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BEB59262F818D009E3540 /* LaunchScreen.storyboard */; };
 		FABD25AF2653033E0047958D /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FABD25AD265302CC0047958D /* MuseoModerno-VariableFont_wght.ttf */; };
 		FABD25B3265305000047958D /* tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD25B2265305000047958D /* tweet.swift */; };
+		FAC92EE0265CC88C00DB6C19 /* CasoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC92EDE265CC88C00DB6C19 /* CasoTableViewCell.swift */; };
+		FAC92EE1265CC88C00DB6C19 /* CasoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC92EDF265CC88C00DB6C19 /* CasoTableViewCell.xib */; };
 		FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */; };
 		FAE4EEB0265612C70074F9AE /* ViewControllerReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4EEAF265612C70074F9AE /* ViewControllerReset.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 		FA9BEB5C262F818D009E3540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABD25AD265302CC0047958D /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		FABD25B2265305000047958D /* tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tweet.swift; path = botDesaparecidx/tweet.swift; sourceTree = SOURCE_ROOT; };
+		FAC92EDE265CC88C00DB6C19 /* CasoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasoTableViewCell.swift; sourceTree = "<group>"; };
+		FAC92EDF265CC88C00DB6C19 /* CasoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CasoTableViewCell.xib; sourceTree = "<group>"; };
 		FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAE4EEAF265612C70074F9AE /* ViewControllerReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,8 @@
 				FA9BEB59262F818D009E3540 /* LaunchScreen.storyboard */,
 				FA9BEB5C262F818D009E3540 /* Info.plist */,
 				FAE4EEAF265612C70074F9AE /* ViewControllerReset.swift */,
+				FAC92EDE265CC88C00DB6C19 /* CasoTableViewCell.swift */,
+				FAC92EDF265CC88C00DB6C19 /* CasoTableViewCell.xib */,
 			);
 			path = botDesaparecidx;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 				FABD25AF2653033E0047958D /* MuseoModerno-VariableFont_wght.ttf in Resources */,
 				FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */,
 				FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */,
+				FAC92EE1265CC88C00DB6C19 /* CasoTableViewCell.xib in Resources */,
 				FA9BEB58262F818D009E3540 /* Assets.xcassets in Resources */,
 				FA9BEB56262F818C009E3540 /* Main.storyboard in Resources */,
 			);
@@ -258,6 +265,7 @@
 				FA9BEB4F262F818C009E3540 /* AppDelegate.swift in Sources */,
 				FA3EA0C7262FA9060093BD96 /* ViewControllerRegistrar.swift in Sources */,
 				FAE4EEB0265612C70074F9AE /* ViewControllerReset.swift in Sources */,
+				FAC92EE0265CC88C00DB6C19 /* CasoTableViewCell.swift in Sources */,
 				B2C738A32651D8A30015DA8E /* TableViewControllerInicio.swift in Sources */,
 				FABD25B3265305000047958D /* tweet.swift in Sources */,
 				B2C738A62651D8E00015DA8E /* TableViewControllerBuscar.swift in Sources */,

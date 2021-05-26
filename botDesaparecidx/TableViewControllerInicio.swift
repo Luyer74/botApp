@@ -23,11 +23,11 @@ class TableViewControllerInicio: UITableViewController{
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let nib = UINib(nibName: "CasoTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "celda")
         ref = Database.database().reference()
-        loadData()
     }
 
     // MARK: - Table view data source
@@ -44,15 +44,17 @@ class TableViewControllerInicio: UITableViewController{
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! CasoTableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = listaCasos[indexPath.row].tweet_text
-        cell.detailTextLabel?.text = listaCasos[indexPath.row].fecha_creado
-        cell.imageView?.image = UIImage(named: "bot2")
+        cell.lblUsuario.text = listaCasos[indexPath.row].user_name
+        cell.lblTexto.text = listaCasos[indexPath.row].tweet_text
+        cell.imgCaso.image = UIImage(named: "bot2")
+        cell.lblfecha.text = listaCasos[indexPath.row].fecha_creado
+        cell.lbllugar.text = listaCasos[indexPath.row].lugar
         if let image_link = listaCasos[indexPath.row].imagen_link{
             let link = URL(string: image_link)
-            cell.imageView?.sd_setImage(with: link, completed: nil)
+            cell.imgCaso.sd_setImage(with: link, completed: nil)
         }
         return cell
     }
@@ -217,7 +219,7 @@ class TableViewControllerInicio: UITableViewController{
     
     func insertData(datosCasos : [[String : String]]){
         for i in 1...datosCasos.count{
-            let tw = tweet(tweet_text: datosCasos[i-1]["tweet_text"]!, fecha_creado: datosCasos[i-1]["fecha_creado"]!, imagen_link : datosCasos[i-1]["link_imagen"])
+            let tw = tweet(tweet_text: datosCasos[i-1]["tweet_text"]!, fecha_creado: datosCasos[i-1]["fecha_creado"]!, imagen_link: datosCasos[i-1]["link_imagen"], user_name: datosCasos[i-1]["nombre_usuario"]!, lugar: datosCasos[i-1]["lugar"]!)
             self.listaCasos.append(tw)
         }
     }
@@ -230,18 +232,18 @@ class TableViewControllerInicio: UITableViewController{
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if tableView.contentSize.height == 0{
-            return
-        }
-        
         guard !isPaginating else{
             return
         }
         let position = scrollView.contentOffset.y
         if position > (tableView.contentSize.height+180-scrollView.frame.size.height){
-            daysPassed = daysPassed - 1
+            print("loading more...")
             loadData()
+            daysPassed = daysPassed - 1
         }
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 }
