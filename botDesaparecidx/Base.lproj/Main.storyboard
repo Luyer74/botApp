@@ -573,8 +573,8 @@
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="178" id="KTO-b1-A6y"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa con tu correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUE-ma-OOD">
-                                                <rect key="frame" x="101.66666666666669" y="198.00000000000003" width="171" height="21.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regístrate con tu correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUE-ma-OOD">
+                                                <rect key="frame" x="90.333333333333329" y="198.00000000000003" width="193.66666666666669" height="21.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21.670000000000002" id="JWe-90-iwk"/>
                                                 </constraints>

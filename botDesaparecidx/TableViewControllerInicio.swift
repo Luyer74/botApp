@@ -115,7 +115,7 @@ class TableViewControllerInicio: UITableViewController{
         // Configure the cell...
         cell.lblUsuario.text = listaCasos[indexPath.row].user_name
         cell.lblTexto.text = listaCasos[indexPath.row].tweet_text
-        cell.imgCaso.image = UIImage(named: "bot2")
+        cell.imgCaso.image = UIImage(named: "persona")
         cell.lblfecha.text = listaCasos[indexPath.row].fecha_creado
         cell.lbllugar.text = listaCasos[indexPath.row].lugar
         if let image_link = listaCasos[indexPath.row].imagen_link{
@@ -240,14 +240,18 @@ class TableViewControllerInicio: UITableViewController{
     
     func getUserName(userID : String, completion: @escaping (String, String) -> Void){
         self.ref.child("USERS/\(userID)").observeSingleEvent(of: .value, with: {(snapshot) in
-            var nombre_usuario = " "
-            var lugar = " "
+            var nombre_usuario = ""
+            var lugar = ""
             if let valueDictionary = snapshot.value as? [AnyHashable:AnyObject]{
                 if let user_name = valueDictionary["name"] as? String {
                     nombre_usuario = user_name
                 }
                 if let location = valueDictionary["location"] as? String{
-                    lugar = location
+                    if location == ""{
+                        lugar = "Desconocido"
+                    }else{
+                        lugar = location
+                    }
                 }
             }
             completion(nombre_usuario, lugar)

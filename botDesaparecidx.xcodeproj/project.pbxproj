@@ -27,7 +27,7 @@
 		FAC92EE1265CC88C00DB6C19 /* CasoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC92EDF265CC88C00DB6C19 /* CasoTableViewCell.xib */; };
 		FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */; };
 		FAE4EEB0265612C70074F9AE /* ViewControllerReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4EEAF265612C70074F9AE /* ViewControllerReset.swift */; };
-		FAF96A4C265DDBF900332D0C /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF96A4A265DDBE800332D0C /* MuseoModerno-VariableFont_wght.ttf */; };
+		FAF96A72265E071C00332D0C /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF96A70265E070400332D0C /* MuseoModerno-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +55,7 @@
 		FAC92EDF265CC88C00DB6C19 /* CasoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CasoTableViewCell.xib; sourceTree = "<group>"; };
 		FAE125CB26321DA0005C35EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAE4EEAF265612C70074F9AE /* ViewControllerReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReset.swift; sourceTree = "<group>"; };
-		FAF96A4A265DDBE800332D0C /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		FAF96A70265E070400332D0C /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "../../../../Downloads/MuseoModerno/MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		FA9BEB4D262F818C009E3540 /* botDesaparecidx */ = {
 			isa = PBXGroup;
 			children = (
-				FAF96A49265DDBCE00332D0C /* fonts */,
+				FAF96A6F265E06F800332D0C /* fonts */,
 				FABD25B2265305000047958D /* tweet.swift */,
 				FA9BEB4E262F818C009E3540 /* AppDelegate.swift */,
 				FA9BEB50262F818C009E3540 /* SceneDelegate.swift */,
@@ -133,10 +133,10 @@
 			path = botDesaparecidx;
 			sourceTree = "<group>";
 		};
-		FAF96A49265DDBCE00332D0C /* fonts */ = {
+		FAF96A6F265E06F800332D0C /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FAF96A4A265DDBE800332D0C /* MuseoModerno-VariableFont_wght.ttf */,
+				FAF96A70265E070400332D0C /* MuseoModerno-VariableFont_wght.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF96A4C265DDBF900332D0C /* MuseoModerno-VariableFont_wght.ttf in Resources */,
+				FAF96A72265E071C00332D0C /* MuseoModerno-VariableFont_wght.ttf in Resources */,
 				FA9BEB5B262F818D009E3540 /* LaunchScreen.storyboard in Resources */,
 				FAE125CC26321DA0005C35EA /* GoogleService-Info.plist in Resources */,
 				FAC92EE1265CC88C00DB6C19 /* CasoTableViewCell.xib in Resources */,
