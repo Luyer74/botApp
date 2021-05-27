@@ -13,6 +13,7 @@
 		B2C738A62651D8E00015DA8E /* TableViewControllerBuscar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A52651D8E00015DA8E /* TableViewControllerBuscar.swift */; };
 		B2C738A92651D95B0015DA8E /* ViewControllerCompartir.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */; };
 		B2C738AC2651D99C0015DA8E /* TableViewControllerGuardar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738AB2651D99C0015DA8E /* TableViewControllerGuardar.swift */; };
+		B2D9F257266032A100D8D655 /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D9F256266032A000D8D655 /* ViewControllerInfo.swift */; };
 		FA251548264C24BC00B4DB65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251547264C24BC00B4DB65 /* HomeViewController.swift */; };
 		FA25154B264C2AEB00B4DB65 /* ViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25154A264C2AEB00B4DB65 /* ViewControllerInicio.swift */; };
 		FA3EA0C7262FA9060093BD96 /* ViewControllerRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA0C6262FA9060093BD96 /* ViewControllerRegistrar.swift */; };
@@ -34,6 +35,7 @@
 		B2C738A52651D8E00015DA8E /* TableViewControllerBuscar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBuscar.swift; sourceTree = "<group>"; };
 		B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCompartir.swift; sourceTree = "<group>"; };
 		B2C738AB2651D99C0015DA8E /* TableViewControllerGuardar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerGuardar.swift; sourceTree = "<group>"; };
+		B2D9F256266032A000D8D655 /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
 		E8124222847D04DFF346405F /* Pods_botDesaparecidx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_botDesaparecidx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8D8D283D984ABED60A2CFB /* Pods-botDesaparecidx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.release.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.release.xcconfig"; sourceTree = "<group>"; };
 		FA251547264C24BC00B4DB65 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				FA9BEB50262F818C009E3540 /* SceneDelegate.swift */,
 				FA9BEB52262F818C009E3540 /* ViewController.swift */,
 				FA9BEB54262F818C009E3540 /* Main.storyboard */,
+				B2D9F256266032A000D8D655 /* ViewControllerInfo.swift */,
 				B2C738AB2651D99C0015DA8E /* TableViewControllerGuardar.swift */,
 				B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */,
 				B2C738A52651D8E00015DA8E /* TableViewControllerBuscar.swift */,
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D9F257266032A100D8D655 /* ViewControllerInfo.swift in Sources */,
 				B2C738AC2651D99C0015DA8E /* TableViewControllerGuardar.swift in Sources */,
 				B2C738A92651D95B0015DA8E /* ViewControllerCompartir.swift in Sources */,
 				FA3EA0C9262FA9180093BD96 /* ViewControllerLogin.swift in Sources */,
