@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -264,14 +265,84 @@
         <!--Info-->
         <scene sceneID="gGW-5z-If8">
             <objects>
-                <viewController id="G4W-vg-fgd" sceneMemberID="viewController">
+                <viewController id="G4W-vg-fgd" customClass="ViewControllerInfo" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7bD-6d-2oN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-4S-mJf">
+                                <rect key="frame" x="30" y="144" width="354" height="569"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="004-Wu-HWv">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="280.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quienes somos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejx-Xo-Uec">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="35"/>
+                                                <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69r-8q-tFm">
+                                                <rect key="frame" x="0.0" y="50" width="354" height="230.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="15" bottom="8" trailing="15"/>
+                                                <string key="text">BotDesaparecidxs es un proyecto
+desarrollado por alumnos del 
+Tecnológico de Monterrey con la
+finalidad de recopilar información
+acerca de personas desaparecidas, a
+través de redes sociales y por entradas 
+de los usuarios, con la finalidad de 
+mejorar el proceso de su búsqueda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mok-f4-LrH">
+                                        <rect key="frame" x="0.0" y="310.5" width="354" height="258.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cómo funcionamos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AE-Uz-24A">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="36"/>
+                                                <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oJ-kk-o2i">
+                                                <rect key="frame" x="0.0" y="51" width="354" height="207.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="15" bottom="8" trailing="15"/>
+                                                <string key="text">Utilizamos la API de Twitter
+para encontrar y difundir 
+casos en nuestras redes sociales.
+Contamos con miles de seguidores, por
+lo que las visualizaciones de casos 
+aumentan exponencialmente con
+nuestra ayuda. ¡Siguenos!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t1J-xl-CZT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bVb-4S-mJf" firstAttribute="leading" secondItem="t1J-xl-CZT" secondAttribute="leading" constant="30" id="3yf-Qi-dT8"/>
+                            <constraint firstItem="t1J-xl-CZT" firstAttribute="trailing" secondItem="bVb-4S-mJf" secondAttribute="trailing" constant="30" id="UM6-Hp-ZEf"/>
+                            <constraint firstItem="t1J-xl-CZT" firstAttribute="bottom" secondItem="bVb-4S-mJf" secondAttribute="bottom" constant="100" id="bOn-b8-IXm"/>
+                            <constraint firstItem="bVb-4S-mJf" firstAttribute="top" secondItem="t1J-xl-CZT" secondAttribute="top" constant="100" id="izY-FP-NcD"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="info" id="znN-u1-jxa"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info.circle.fill" catalog="system" id="znN-u1-jxa"/>
+                    <connections>
+                        <outlet property="lbInfo1" destination="69r-8q-tFm" id="hDr-Pb-SWV"/>
+                        <outlet property="lbInfo2" destination="2oJ-kk-o2i" id="AxO-UZ-u1Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydz-0b-gJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,38 +489,241 @@
         <!--Compartir-->
         <scene sceneID="eC4-JU-lNT">
             <objects>
-                <viewController id="dVm-xm-ZFs" customClass="ViewControllerInicio" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dVm-xm-ZFs" customClass="ViewControllerCompartir" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K9j-OB-tJX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTk-rq-8Vu">
-                                <rect key="frame" x="205" y="329" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="logOut:" destination="dVm-xm-ZFs" eventType="touchUpInside" id="9WD-TB-BI0"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJh-cx-RL4">
-                                <rect key="frame" x="112" y="176" width="212" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZLM-lc-0To">
+                                <rect key="frame" x="30" y="103" width="354" height="690"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DP3-Ah-itq">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="156"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb logo bot" translatesAutoresizingMaskIntoConstraints="NO" id="1vp-2z-0cD">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="zWQ-CO-v5g"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comparte tu caso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjT-lr-fLm">
+                                                <rect key="frame" x="88.5" y="130" width="177" height="26"/>
+                                                <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-2j-IXv" userLabel="Nombre">
+                                        <rect key="frame" x="0.0" y="166" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-V0-fyd">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-fh-5RH">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TvH-Zf-sdW" userLabel="Sexo">
+                                        <rect key="frame" x="0.0" y="211.5" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPJ-zU-U8a">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-Wj-nQr">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1D9-Nd-vbP" userLabel="Edad">
+                                        <rect key="frame" x="0.0" y="257" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcX-wP-6qI">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JG8-hL-2qe">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-b8-52n" userLabel="Ultima localizacion">
+                                        <rect key="frame" x="0.0" y="302.5" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultima localización:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3W-D1-ZWs">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1t-C1-LK5">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pGx-RN-cFh" userLabel="Fecha de desaparicion">
+                                        <rect key="frame" x="0.0" y="348" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57b-nk-YBN">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <string key="text">Fecha de 
+desaparición:</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYY-Ym-8rK">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-Jo-VkO" userLabel="Rasgos">
+                                        <rect key="frame" x="0.0" y="393.5" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rasgos Particulares:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNH-gn-KXy">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9kZ-Nu-UbT">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WxA-Ee-kLo" userLabel="Foto">
+                                        <rect key="frame" x="0.0" y="439" width="354" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZy-QY-8Rh">
+                                                <rect key="frame" x="0.0" y="49.5" width="172" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb logo bot" translatesAutoresizingMaskIntoConstraints="NO" id="Mq4-C6-Khg">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="120"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="7zA-gK-Imy" appends="YES" id="1WT-5j-tpZ"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FfR-px-e0G" userLabel="Comentarios">
+                                        <rect key="frame" x="0.0" y="569" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios extra:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpO-Kn-i9b">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(opcional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3M-a3-tfg">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UmK-bK-L3S" userLabel="Contacto">
+                                        <rect key="frame" x="0.0" y="614.5" width="354" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo de contacto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb4-qn-vaL">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtd-PB-n6q">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6QZ-aq-OyJ">
+                                        <rect key="frame" x="0.0" y="660" width="354" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMy-5Q-Jmv">
+                                                <rect key="frame" x="102" y="0.0" width="150" height="30"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="3F2-hp-psH"/>
+                                                    <constraint firstAttribute="width" constant="150" id="wCe-zQ-Ssb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="20"/>
+                                                <state key="normal" title="Compartir">
+                                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z9I-b8-52n" firstAttribute="height" secondItem="3gg-2j-IXv" secondAttribute="height" id="9nS-GI-Kve"/>
+                                    <constraint firstItem="FfR-px-e0G" firstAttribute="height" secondItem="3gg-2j-IXv" secondAttribute="height" id="DY2-7F-eTu"/>
+                                    <constraint firstItem="pGx-RN-cFh" firstAttribute="height" secondItem="3gg-2j-IXv" secondAttribute="height" id="JOx-ks-Rc0"/>
+                                    <constraint firstItem="1D9-Nd-vbP" firstAttribute="height" secondItem="3gg-2j-IXv" secondAttribute="height" id="TeO-wY-g5u"/>
+                                    <constraint firstItem="Mq4-C6-Khg" firstAttribute="height" secondItem="1vp-2z-0cD" secondAttribute="height" id="WuM-5q-Vmx"/>
+                                    <constraint firstItem="TvH-Zf-sdW" firstAttribute="height" secondItem="3gg-2j-IXv" secondAttribute="height" id="ae9-1f-eUE"/>
+                                    <constraint firstItem="Ztj-Jo-VkO" firstAttribute="height" secondItem="3gg-2j-IXv" secondAttribute="height" id="mak-eI-OEn"/>
+                                    <constraint firstItem="UmK-bK-L3S" firstAttribute="height" secondItem="3gg-2j-IXv" secondAttribute="height" id="quO-NC-rMq"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="237-67-ov5"/>
-                        <color key="backgroundColor" red="1" green="0.62520521880000002" blue="0.47803622480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZLM-lc-0To" firstAttribute="centerX" secondItem="K9j-OB-tJX" secondAttribute="centerX" id="1P2-j9-w5h"/>
+                            <constraint firstItem="237-67-ov5" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZLM-lc-0To" secondAttribute="bottom" constant="20" id="Jq9-2y-msq"/>
+                            <constraint firstItem="ZLM-lc-0To" firstAttribute="leading" secondItem="237-67-ov5" secondAttribute="leading" constant="30" id="fF9-O9-Pd1"/>
+                            <constraint firstItem="ZLM-lc-0To" firstAttribute="top" relation="greaterThanOrEqual" secondItem="237-67-ov5" secondAttribute="top" constant="20" id="jKm-vs-Bet"/>
+                            <constraint firstItem="237-67-ov5" firstAttribute="trailing" secondItem="ZLM-lc-0To" secondAttribute="trailing" constant="30" id="y61-SD-Jmd"/>
+                            <constraint firstItem="ZLM-lc-0To" firstAttribute="centerY" secondItem="K9j-OB-tJX" secondAttribute="centerY" id="zdH-5Z-3gl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compartir" image="share" id="uyL-QA-tQ8"/>
                     <connections>
-                        <outlet property="emaillbl" destination="HJh-cx-RL4" id="z7S-yI-nsC"/>
+                        <outlet property="imgFoto" destination="Mq4-C6-Khg" id="LTo-wR-QPW"/>
+                        <outlet property="tfComentarios" destination="h3M-a3-tfg" id="H09-In-aWz"/>
+                        <outlet property="tfContacto" destination="qtd-PB-n6q" id="fGF-J0-Zm4"/>
+                        <outlet property="tfEdad" destination="JG8-hL-2qe" id="wH3-cq-fBd"/>
+                        <outlet property="tfFecha" destination="kYY-Ym-8rK" id="TKj-Hr-QeH"/>
+                        <outlet property="tfNombre" destination="MKr-fh-5RH" id="Rdp-MF-x0k"/>
+                        <outlet property="tfRasgos" destination="9kZ-Nu-UbT" id="2k9-p2-ybs"/>
+                        <outlet property="tfSexo" destination="5XN-Wj-nQr" id="Skp-6M-zEl"/>
+                        <outlet property="tfUltLocacion" destination="Y1t-C1-LK5" id="Z5I-pM-YCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Th-BQ-ZnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7zA-gK-Imy">
+                    <connections>
+                        <action selector="agregaFoto:" destination="dVm-xm-ZFs" id="Nud-lo-25q"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4187" y="675"/>
+            <point key="canvasLocation" x="4186.9565217391309" y="675"/>
         </scene>
         <!--BotDesaparecidx-->
         <scene sceneID="oxh-gS-3pe">
@@ -762,6 +1036,12 @@
         <image name="search" width="25" height="25"/>
         <image name="share" width="25" height="25"/>
         <image name="transparent-logo" width="500" height="500"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
