@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewControllerInfo: UIViewController {
     @IBOutlet weak var lbInfo1: UILabel!
@@ -31,5 +33,16 @@ class ViewControllerInfo: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logOut(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+       } catch let signOutError as NSError {
+         print ("Error signing out: %@", signOutError)
+       }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let registrationController = storyboard.instantiateViewController(identifier: "RegistrationController")
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(registrationController)
+    }
 }

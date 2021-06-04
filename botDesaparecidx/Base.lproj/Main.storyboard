@@ -347,6 +347,14 @@ nuestra ayuda. ¡Siguenos!</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pn-J1-B3T">
+                                <rect key="frame" x="262" y="736" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Salir"/>
+                                <connections>
+                                    <action selector="logOut:" destination="G4W-vg-fgd" eventType="touchUpInside" id="UOG-1l-kg8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t1J-xl-CZT"/>
                         <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
@@ -760,6 +768,10 @@ desaparición:</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="BotDesaparecidx" largeTitleDisplayMode="always" id="keN-c5-MQw"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="GTv-OL-wVo">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7S6-yq-uzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -777,10 +789,10 @@ desaparición:</string>
                                 <rect key="frame" x="20" y="64" width="374" height="729"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-f9-1u4">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edP-q5-zNf">
-                                                <rect key="frame" x="0.0" y="4.5" width="374" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="d2h-XS-iaQ"/>
                                                 </constraints>
@@ -790,7 +802,7 @@ desaparición:</string>
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AKm-ef-Ool">
-                                        <rect key="frame" x="0.0" y="63" width="374" height="666"/>
+                                        <rect key="frame" x="0.0" y="54" width="374" height="675"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" id="QH0-hC-dhm">

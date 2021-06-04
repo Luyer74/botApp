@@ -37,9 +37,21 @@ class TableViewControllerInicio: UITableViewController{
     var isPaginating = false
     private let imageView = UIImageView(image: UIImage(named: "bot2"))
     
+    
+    @objc func refresh(sender:AnyObject)
+    {
+        daysPassed = 0
+        listaCasos.removeAll()
+        tableView.reloadData()
+        loadData()
+        daysPassed = daysPassed - 1
+        self.refreshControl?.endRefreshing()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
