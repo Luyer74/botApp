@@ -49,6 +49,12 @@ class TableViewControllerInicio: UITableViewController{
         ref = Database.database().reference()
     }
     
+    /*//MARK: - Protocolo Agrega caso
+    func agregaCaso() {
+        tableView.reloadData()
+    }*/
+    
+    //MARK: - Funciones para las cells
     private func setupUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
 
