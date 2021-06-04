@@ -140,7 +140,7 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
         */
         
     }
-    
+   /*
      func getInitialData(completion: @escaping ([[String : String]]) -> Void){
          var initData = [[String : String]]()
          var cont = 0
@@ -175,5 +175,5 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
         format.dateFormat = "yyyy-MM-dd"
         format.timeZone = TimeZone(abbreviation: "UTC")
         return format.string(from: nextDate!)
-    }
+    }*/
 }
