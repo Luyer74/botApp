@@ -8,6 +8,8 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import Photos
+import FirebaseStorage
 
 class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //@IBOutlet weak var emaillbl: UILabel!
@@ -24,6 +26,9 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     let datePicker =  UIDatePicker()
     var ref : DatabaseReference!
     var daysPassed = 0
+    let imagePicker = UIImagePickerController()
+    var urlFoto : URL!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         /*if Auth.auth().currentUser != nil {
@@ -69,16 +74,17 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     }
     
     @IBAction func agregaFoto(_ sender: UITapGestureRecognizer) {
-        let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
+    
     // MARK: - Metodos del delegado del Image Picker Controller
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let foto = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imgFoto.image = foto
-        
+        urlFoto = info[UIImagePickerController.InfoKey.imageURL] as? URL
+        print(urlFoto!)
         dismiss(animated: true, completion: nil)
     }
     
@@ -128,16 +134,30 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
             
             //Crear CASO
             self.ref.child("CASO").childByAutoId().setValue(["text": textoCaso,"date":fechaCaso])
+            
+            //Pasar imagen
+            uploadImage(fileURL: urlFoto)
+            //Crear tweet
+            
         }
         
+    }
+    
+    func uploadImage(fileURL: URL){
+        let storage = Storage.storage()
         
-        //Pasar foto a Imagen
+        let storeRef = storage.reference()
         
-        //Agregar nuevo objeto
-        /*
-         self.ref.child("TWEETS").childByAutoId().setValue(["date_created": fechaCaso,"tweet_text": textoCaso, "user":])
-         self.ref.child("IMAGES").childByAutoId().setValue()
-        */
+        let photoRef = storeRef.child("FotoCaso")
+        
+        let upload = photoRef.putFile(from: fileURL, metadata: nil, completion: {(metadata, err) in
+            guard let metadata = metadata else{
+                print(err?.localizedDescription)
+                return
+            }
+            print("Photo uploaded")
+        })
+        
         
     }
    /*
