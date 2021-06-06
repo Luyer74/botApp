@@ -123,38 +123,40 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
             self.present(alert, animated: true, completion: nil)
         } else {
             //Convertir a formato nuevo
-            let textoCaso = "AYUDA A DIFUNDIR! \n\(tfNombre.text!), \(tfSexo.text!), de \(tfEdad.text!) años. Vistx por última vez el \(tfFecha.text!) en \(tfUltLocacion.text!).\nRasgos Fisicos: \(tfRasgos.text!) \nComentarios: \(tfComentarios.text!) \nSi tienes informacion contacta a \(tfContacto.text!)\n"
-            print(textoCaso)
+            let textoCaso = "AYUDA A DIFUNDIR! \n\(tfNombre.text!), \(tfSexo.text!), de \(tfEdad.text!) años. Vistx por última vez el \(tfFecha.text!) en \(tfUltLocacion.text!).\nRasgos Fisicos: \(tfRasgos.text!) \nComentarios: \(tfComentarios.text!) \nSi tienes informacion contacta a \(tfContacto.text!)"
+            
             //Obtener fecha de hoy
             let date = Date()
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd"
             let fechaCaso = formatter.string(from: date)
-            print(fechaCaso)
             
-            //Crear CASO
-            self.ref.child("CASO").childByAutoId().setValue(["text": textoCaso,"date":fechaCaso])
-            
-            //Pasar imagen
-            uploadImage(fileURL: urlFoto)
-            //Crear tweet
-            
+            //Pasar imagen y crear CASO
+            uploadImage(fileURL: urlFoto, texto: textoCaso, fecha: fechaCaso, nombre: tfNombre.text!, lugar: tfUltLocacion.text!)
         }
         
     }
     
-    func uploadImage(fileURL: URL){
+    func uploadImage(fileURL: URL, texto: String, fecha: String, nombre: String, lugar: String){
         let storage = Storage.storage()
         
         let storeRef = storage.reference()
         
-        let photoRef = storeRef.child("FotoCaso")
+        let user = Auth.auth().currentUser?.uid
+        
+        let photoRef = storeRef.child("FotoCaso\(user)")
         
         let upload = photoRef.putFile(from: fileURL, metadata: nil, completion: {(metadata, err) in
             guard let metadata = metadata else{
                 print(err?.localizedDescription)
                 return
             }
+            //Obtener url de Storage y guardarlo en Database
+            photoRef.downloadURL(completion: {(url: URL?, error: Error?) in
+                let link = url?.absoluteString
+                //Crear CASO
+                self.ref.child("CASO").childByAutoId().setValue(["text": texto,"date":fecha, "image_link": link, "name": nombre, "location": lugar])
+            })
             print("Photo uploaded")
         })
         

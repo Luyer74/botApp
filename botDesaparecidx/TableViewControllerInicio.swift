@@ -206,6 +206,17 @@ class TableViewControllerInicio: UITableViewController{
                 })
             }
             
+            
+            group.enter()
+            self.getCasoData(completion: {casos in
+                if(casos.count != 0){
+                    for i in 1...casos.count{
+                        self.listaCasos.append(casos[i-1])
+                    }
+                }
+            })
+            group.leave()
+            
             group.notify(queue: DispatchQueue.global(), execute: {
                 self.insertData(datosCasos: datosCasos)
                 print("listo!")
@@ -241,6 +252,32 @@ class TableViewControllerInicio: UITableViewController{
                 cont = cont + 1
             }
             completion(initData)
+        }
+    }
+    
+    func getCasoData(completion: @escaping ([tweet]) -> Void){
+        var cont = 0
+        let date_str = "2021-06-06"
+        var tweetCasos = [tweet]()
+        print(date_str)
+        ref.child("CASO").queryOrdered(byChild: "date").queryStarting(atValue: date_str).queryEnding(atValue: date_str).observe(.value) { (snapshot) in
+            for snap in snapshot.children{
+                let data = snap as! DataSnapshot
+                
+                if let valueDictionary = data.value as? [AnyHashable:AnyObject]{
+                    let fechacreado = valueDictionary["date"] as! String
+                    let tweet_text = valueDictionary["text"] as! String
+                    let foto = valueDictionary["image_link"] as! String
+                    let nombre = valueDictionary["name"] as! String
+                    let lugar = valueDictionary["location"] as! String
+                    print(valueDictionary)
+                    let caso = tweet(tweet_text: tweet_text, fecha_creado: fechacreado, imagen_link: foto, user_name: nombre, lugar: lugar)
+                    tweetCasos.append(caso)
+                }
+                
+                cont = cont + 1
+            }
+            completion(tweetCasos)
         }
     }
     
