@@ -182,6 +182,17 @@ class TableViewControllerInicio: UITableViewController{
         getInitialData() { datos in
             let group = DispatchGroup()
             datosCasos = datos
+            
+            group.enter()
+            self.getCasoData(completion: {casos in
+                if(casos.count != 0){
+                    for i in 1...casos.count{
+                        self.listaCasos.append(casos[i-1])
+                    }
+                }
+            })
+            group.leave()
+            
             if datosCasos.count == 0{
                 self.isPaginating = false
                 return
@@ -205,17 +216,6 @@ class TableViewControllerInicio: UITableViewController{
                     group.leave()
                 })
             }
-            
-            
-            group.enter()
-            self.getCasoData(completion: {casos in
-                if(casos.count != 0){
-                    for i in 1...casos.count{
-                        self.listaCasos.append(casos[i-1])
-                    }
-                }
-            })
-            group.leave()
             
             group.notify(queue: DispatchQueue.global(), execute: {
                 self.insertData(datosCasos: datosCasos)
@@ -257,9 +257,9 @@ class TableViewControllerInicio: UITableViewController{
     
     func getCasoData(completion: @escaping ([tweet]) -> Void){
         var cont = 0
-        let date_str = "2021-06-06"
+        let date_str = getDate()
         var tweetCasos = [tweet]()
-        print(date_str)
+        print("casos: " + date_str)
         ref.child("CASO").queryOrdered(byChild: "date").queryStarting(atValue: date_str).queryEnding(atValue: date_str).observe(.value) { (snapshot) in
             for snap in snapshot.children{
                 let data = snap as! DataSnapshot
@@ -270,7 +270,6 @@ class TableViewControllerInicio: UITableViewController{
                     let foto = valueDictionary["image_link"] as! String
                     let nombre = valueDictionary["name"] as! String
                     let lugar = valueDictionary["location"] as! String
-                    print(valueDictionary)
                     let caso = tweet(tweet_text: tweet_text, fecha_creado: fechacreado, imagen_link: foto, user_name: nombre, lugar: lugar)
                     tweetCasos.append(caso)
                 }
@@ -316,6 +315,7 @@ class TableViewControllerInicio: UITableViewController{
     func reloadTable(){
         DispatchQueue.main.async {
             self.tableView.tableFooterView = nil
+            self.daysPassed = self.daysPassed - 1
             self.tableView.reloadData()
         }
     }
@@ -355,7 +355,6 @@ class TableViewControllerInicio: UITableViewController{
         if position > (tableView.contentSize.height+180-scrollView.frame.size.height){
             print("loading more...")
             loadData()
-            daysPassed = daysPassed - 1
         }
     }
     
