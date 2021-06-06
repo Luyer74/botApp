@@ -770,6 +770,9 @@ desaparición:</string>
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="U8T-q8-bhV" kind="show" identifier="mostrarCaso" id="hv4-QA-F36"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -852,15 +855,15 @@ desaparición:</string>
             </objects>
             <point key="canvasLocation" x="4257.971014492754" y="-256.47321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Detalle-->
         <scene sceneID="ABc-Kl-BmJ">
             <objects>
-                <viewController id="U8T-q8-bhV" sceneMemberID="viewController">
+                <viewController id="U8T-q8-bhV" customClass="ViewControllerDetalle" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AuG-J1-5gY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="oc6-mZ-WBO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.88619667290000004" green="0.88632434609999999" blue="0.88616865869999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="olT-Zc-idb"/>
                 </viewController>
