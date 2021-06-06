@@ -8,6 +8,8 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import Photos
+import FirebaseStorage
 
 class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //@IBOutlet weak var emaillbl: UILabel!
@@ -22,6 +24,10 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var tfContacto: UITextField!
     
     let datePicker =  UIDatePicker()
+    var ref : DatabaseReference!
+    var daysPassed = 0
+    let imagePicker = UIImagePickerController()
+    var urlFoto : URL!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +44,7 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     @IBAction func quitaTeclado(){
         view.endEditing(true)
     }
-    
+    //MARK: - Funciones para el Date Picker
     func createDatePicker() {
         //toolbar
         let toolbar = UIToolbar()
@@ -68,16 +74,17 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     }
     
     @IBAction func agregaFoto(_ sender: UITapGestureRecognizer) {
-        let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
+    
     // MARK: - Metodos del delegado del Image Picker Controller
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let foto = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imgFoto.image = foto
-        
+        urlFoto = info[UIImagePickerController.InfoKey.imageURL] as? URL
+        print(urlFoto!)
         dismiss(animated: true, completion: nil)
     }
     
@@ -105,5 +112,90 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let registrationController = storyboard.instantiateViewController(identifier: "RegistrationController")
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(registrationController)
+    }*/
+    //MARK: - Compartir el caso creado.
+    @IBAction func compartirCaso(_ sender: Any) {
+        ref = Database.database().reference()
+        //Convertir info a texto
+        if tfNombre.text=="" || tfSexo.text=="" || tfEdad.text=="" || tfUltLocacion.text=="" || tfFecha.text=="" || tfRasgos.text=="" || tfContacto.text=="" {
+            let alert = UIAlertController(title: "Error", message: "Deben llenarse los campos", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            //Convertir a formato nuevo
+            let textoCaso = "AYUDA A DIFUNDIR! \n\(tfNombre.text!), \(tfSexo.text!), de \(tfEdad.text!) años. Vistx por última vez el \(tfFecha.text!) en \(tfUltLocacion.text!).\nRasgos Fisicos: \(tfRasgos.text!) \nComentarios: \(tfComentarios.text!) \nSi tienes informacion contacta a \(tfContacto.text!)"
+            
+            //Obtener fecha de hoy
+            let date = Date()
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            let fechaCaso = formatter.string(from: date)
+            
+            //Pasar imagen y crear CASO
+            uploadImage(fileURL: urlFoto, texto: textoCaso, fecha: fechaCaso, nombre: tfNombre.text!, lugar: tfUltLocacion.text!)
+        }
+        
+    }
+    
+    func uploadImage(fileURL: URL, texto: String, fecha: String, nombre: String, lugar: String){
+        let storage = Storage.storage()
+        
+        let storeRef = storage.reference()
+        
+        let user = Auth.auth().currentUser?.uid
+        
+        let photoRef = storeRef.child("FotoCaso\(user)")
+        
+        let upload = photoRef.putFile(from: fileURL, metadata: nil, completion: {(metadata, err) in
+            guard let metadata = metadata else{
+                print(err?.localizedDescription)
+                return
+            }
+            //Obtener url de Storage y guardarlo en Database
+            photoRef.downloadURL(completion: {(url: URL?, error: Error?) in
+                let link = url?.absoluteString
+                //Crear CASO
+                self.ref.child("CASO").childByAutoId().setValue(["text": texto,"date":fecha, "image_link": link, "name": nombre, "location": lugar])
+            })
+            print("Photo uploaded")
+        })
+        
+        
+    }
+   /*
+     func getInitialData(completion: @escaping ([[String : String]]) -> Void){
+         var initData = [[String : String]]()
+         var cont = 0
+         let date_str = getDate()
+         print(date_str)
+         ref.child("TWEETS").queryOrdered(byChild: "date_created").queryStarting(atValue: date_str).queryEnding(atValue: date_str).observe(.value) { (snapshot) in
+             for snap in snapshot.children{
+                 let data = snap as! DataSnapshot
+                 let tweetID = data.key
+                 if let valueDictionary = data.value as? [AnyHashable:AnyObject]{
+                     var userID = ""
+                     if let userIDini = valueDictionary["user"] as? NSNumber{
+                         userID = userIDini.stringValue
+                     }
+                     else if let userIDini = valueDictionary["user"] as? String{
+                         userID = userIDini
+                     }
+                     let fechacreado = valueDictionary["date_created"] as! String
+                     let tweet_text = valueDictionary["tweet_text"] as! String
+                     let dict = ["tweet_id" : tweetID, "fecha_creado" : fechacreado, "id_usuario" : userID, "tweet_text" : tweet_text]
+                     initData.insert(dict, at: 0)
+                 }
+                 cont = cont + 1
+             }
+             completion(initData)
+         }
+     }
+    func getDate() -> String{
+        let fecha = Date()
+        let nextDate = Calendar.current.date(byAdding: .day, value: daysPassed, to: fecha)
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd"
+        format.timeZone = TimeZone(abbreviation: "UTC")
+        return format.string(from: nextDate!)
     }*/
 }

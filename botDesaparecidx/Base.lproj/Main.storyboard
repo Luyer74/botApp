@@ -522,7 +522,7 @@ nuestra ayuda. ¡Siguenos!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZLM-lc-0To">
-                                <rect key="frame" x="30" y="64" width="354" height="685"/>
+                                <rect key="frame" x="30" y="67.5" width="354" height="678"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DP3-Ah-itq">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="156"/>
@@ -542,7 +542,7 @@ nuestra ayuda. ¡Siguenos!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-2j-IXv" userLabel="Nombre">
-                                        <rect key="frame" x="0.0" y="166" width="354" height="35"/>
+                                        <rect key="frame" x="0.0" y="166" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-V0-fyd">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="35"/>
@@ -558,7 +558,7 @@ nuestra ayuda. ¡Siguenos!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TvH-Zf-sdW" userLabel="Sexo">
-                                        <rect key="frame" x="0.0" y="211" width="354" height="35"/>
+                                        <rect key="frame" x="0.0" y="210" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPJ-zU-U8a">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="35"/>
@@ -574,7 +574,7 @@ nuestra ayuda. ¡Siguenos!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1D9-Nd-vbP" userLabel="Edad">
-                                        <rect key="frame" x="0.0" y="256" width="354" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="254" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcX-wP-6qI">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="34.5"/>
@@ -585,12 +585,12 @@ nuestra ayuda. ¡Siguenos!</string>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JG8-hL-2qe">
                                                 <rect key="frame" x="182" y="0.0" width="172" height="34.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-b8-52n" userLabel="Ultima localizacion">
-                                        <rect key="frame" x="0.0" y="300.5" width="354" height="35"/>
+                                        <rect key="frame" x="0.0" y="298" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultima localización:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3W-D1-ZWs">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="35"/>
@@ -606,12 +606,10 @@ nuestra ayuda. ¡Siguenos!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pGx-RN-cFh" userLabel="Fecha de desaparicion">
-                                        <rect key="frame" x="0.0" y="345.5" width="354" height="35"/>
+                                        <rect key="frame" x="0.0" y="342" width="354" height="34"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57b-nk-YBN">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35"/>
-                                                <string key="text">Fecha de 
-desaparición:</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha  desaparición:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57b-nk-YBN">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -624,7 +622,7 @@ desaparición:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-Jo-VkO" userLabel="Rasgos">
-                                        <rect key="frame" x="0.0" y="390.5" width="354" height="35"/>
+                                        <rect key="frame" x="0.0" y="386" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rasgos Particulares:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNH-gn-KXy">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="35"/>
@@ -640,10 +638,10 @@ desaparición:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WxA-Ee-kLo" userLabel="Foto">
-                                        <rect key="frame" x="0.0" y="435.5" width="354" height="120"/>
+                                        <rect key="frame" x="0.0" y="430" width="354" height="120"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZy-QY-8Rh">
-                                                <rect key="frame" x="0.0" y="49" width="172" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="172" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -658,7 +656,7 @@ desaparición:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FfR-px-e0G" userLabel="Comentarios">
-                                        <rect key="frame" x="0.0" y="565.5" width="354" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="560" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios extra:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpO-Kn-i9b">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="34.5"/>
@@ -674,7 +672,7 @@ desaparición:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UmK-bK-L3S" userLabel="Contacto">
-                                        <rect key="frame" x="0.0" y="610" width="354" height="35"/>
+                                        <rect key="frame" x="0.0" y="604" width="354" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo de contacto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb4-qn-vaL">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="35"/>
@@ -690,7 +688,7 @@ desaparición:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6QZ-aq-OyJ">
-                                        <rect key="frame" x="0.0" y="655" width="354" height="30"/>
+                                        <rect key="frame" x="0.0" y="648" width="354" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMy-5Q-Jmv">
                                                 <rect key="frame" x="102" y="0.0" width="150" height="30"/>
@@ -703,6 +701,9 @@ desaparición:</string>
                                                 <state key="normal" title="Compartir">
                                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="compartirCaso:" destination="dVm-xm-ZFs" eventType="touchUpInside" id="gst-jA-bxi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

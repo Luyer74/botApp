@@ -11,5 +11,6 @@ target 'botDesaparecidx' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'SDWebImage'
+  pod 'Firebase/Storage'
 
 end
