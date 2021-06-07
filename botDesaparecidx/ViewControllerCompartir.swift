@@ -150,6 +150,10 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
             let alert = UIAlertController(title: "Error", message: "Deben llenarse los campos", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
+        } else if urlFoto == nil {
+            let alert = UIAlertController(title: "Error", message: "Por favor seleccione una foto para el caso", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         } else {
             //Convertir a formato nuevo
             let textoCaso = "AYUDA A DIFUNDIR! \n\(tfNombre.text!), \(tfSexo.text!), de \(tfEdad.text!) años. Vistx por última vez el \(tfFecha.text!) en \(tfUltLocacion.text!).\nRasgos Fisicos: \(tfRasgos.text!) \nComentarios: \(tfComentarios.text!) \nSi tienes informacion contacta a \(tfContacto.text!)"
