@@ -32,9 +32,6 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     private let sexos = ["Masculino","Femenino"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*if Auth.auth().currentUser != nil {
-            emaillbl.text = Auth.auth().currentUser?.email
-        }*/
         // Do any additional setup after loading the view.
         sexPicker.delegate = self
         createPicker()

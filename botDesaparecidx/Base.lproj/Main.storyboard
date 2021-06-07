@@ -41,7 +41,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BotDesaparecidx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFf-r1-6Io">
-                                                <rect key="frame" x="74.5" y="198" width="225.5" height="30"/>
+                                                <rect key="frame" x="83" y="198" width="208.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="hr2-4z-WQx"/>
                                                 </constraints>
@@ -50,7 +50,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Una plataforma digital para casos de personas desaparecidas" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJi-90-hhF">
-                                                <rect key="frame" x="23" y="248" width="328" height="60"/>
+                                                <rect key="frame" x="36.5" y="248" width="301.5" height="60"/>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Light" family="MuseoModerno" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -274,16 +274,16 @@
                                 <rect key="frame" x="30" y="84" width="354" height="659"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="004-Wu-HWv">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="233"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="229.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quienes somos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejx-Xo-Uec">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="32.5"/>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69r-8q-tFm">
-                                                <rect key="frame" x="0.0" y="58" width="354" height="175"/>
+                                                <rect key="frame" x="0.0" y="47.5" width="354" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="15" bottom="8" trailing="15"/>
                                                 <string key="text">BotDesaparecidxs es un proyecto
@@ -301,16 +301,16 @@ mejorar el proceso de su búsqueda.</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mok-f4-LrH">
-                                        <rect key="frame" x="0.0" y="263" width="354" height="226"/>
+                                        <rect key="frame" x="0.0" y="259.5" width="354" height="229.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cómo funcionamos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AE-Uz-24A">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="46"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="36.5"/>
                                                 <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oJ-kk-o2i">
-                                                <rect key="frame" x="0.0" y="61" width="354" height="165"/>
+                                                <rect key="frame" x="0.0" y="51.5" width="354" height="178"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="15" bottom="8" trailing="15"/>
                                                 <string key="text">Utilizamos la API de Twitter
@@ -365,36 +365,7 @@ nuestra ayuda. ¡Siguenos!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydz-0b-gJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5174" y="394"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Wdg-fc-Oqk">
-            <objects>
-                <tableViewController id="zkN-X6-Bx2" customClass="TableViewControllerGuardar" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iPs-eT-rjU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SIl-sg-hep">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SIl-sg-hep" id="yVb-P7-fGz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="zkN-X6-Bx2" id="h27-AG-NdQ"/>
-                            <outlet property="delegate" destination="zkN-X6-Bx2" id="sTx-RA-g6w"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="NXv-6x-l27"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k07-6L-U0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3919" y="1356"/>
+            <point key="canvasLocation" x="4849" y="78"/>
         </scene>
         <!--Restablecer-->
         <scene sceneID="zdD-DT-zQ2">
@@ -487,23 +458,6 @@ nuestra ayuda. ¡Siguenos!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFt-yx-tkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1873.913043478261" y="1159.1517857142856"/>
-        </scene>
-        <!--Guardado-->
-        <scene sceneID="H5e-sL-fwD">
-            <objects>
-                <navigationController id="C5M-jm-2AT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Guardado" image="folder" id="HpO-qH-sdn"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tLc-lM-2eJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="zkN-X6-Bx2" kind="relationship" relationship="rootViewController" id="tpp-wf-A5J"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pJ6-eZ-kaG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3026" y="1356"/>
         </scene>
         <!--Compartir-->
         <scene sceneID="eC4-JU-lNT">
@@ -743,7 +697,7 @@ nuestra ayuda. ¡Siguenos!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4186.9565217391309" y="675"/>
+            <point key="canvasLocation" x="3929" y="475"/>
         </scene>
         <!--BotDesaparecidx-->
         <scene sceneID="oxh-gS-3pe">
@@ -766,69 +720,21 @@ nuestra ayuda. ¡Siguenos!</string>
             </objects>
             <point key="canvasLocation" x="4577" y="-927"/>
         </scene>
-        <!--Buscar-->
+        <!--Config-->
         <scene sceneID="PZU-lD-3fv">
             <objects>
                 <viewController id="HL6-Kn-p4F" customClass="ViewControllerBuscar" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OTX-hb-hoN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tyj-Qq-CJL">
-                                <rect key="frame" x="20" y="64" width="374" height="729"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-f9-1u4">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edP-q5-zNf">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="d2h-XS-iaQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AKm-ef-Ool">
-                                        <rect key="frame" x="0.0" y="54" width="374" height="675"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" id="QH0-hC-dhm">
-                                                <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QH0-hC-dhm" id="7GR-TL-vrq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="HL6-Kn-p4F" id="tka-Cz-gEy"/>
-                                            <outlet property="delegate" destination="HL6-Kn-p4F" id="WEt-t3-QrN"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4g2-kq-8t8"/>
                         <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="tyj-Qq-CJL" firstAttribute="top" secondItem="4g2-kq-8t8" secondAttribute="top" constant="20" id="0rr-L0-w1n"/>
-                            <constraint firstItem="4g2-kq-8t8" firstAttribute="bottom" secondItem="tyj-Qq-CJL" secondAttribute="bottom" constant="20" id="9ld-wX-XVw"/>
-                            <constraint firstItem="4g2-kq-8t8" firstAttribute="trailing" secondItem="tyj-Qq-CJL" secondAttribute="trailing" constant="20" id="CDY-de-u8n"/>
-                            <constraint firstItem="tyj-Qq-CJL" firstAttribute="leading" secondItem="4g2-kq-8t8" secondAttribute="leading" constant="20" id="mNy-rK-MmK"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Buscar" image="search" id="0Qk-aD-xCh"/>
-                    <connections>
-                        <outlet property="tableView" destination="AKm-ef-Ool" id="unQ-Cf-w7i"/>
-                        <outlet property="tfBuscar" destination="edP-q5-zNf" id="CTB-3e-PDs"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Config" image="search" id="0Qk-aD-xCh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKp-ib-O3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4257.971014492754" y="-256.47321428571428"/>
+            <point key="canvasLocation" x="3929" y="-252"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ABc-Kl-BmJ">
@@ -883,7 +789,6 @@ nuestra ayuda. ¡Siguenos!</string>
                         <segue destination="HL6-Kn-p4F" kind="relationship" relationship="viewControllers" id="8c8-JP-UfP"/>
                         <segue destination="dVm-xm-ZFs" kind="relationship" relationship="viewControllers" id="Lrf-Wa-rOP"/>
                         <segue destination="G4W-vg-fgd" kind="relationship" relationship="viewControllers" id="D8b-oS-ewJ"/>
-                        <segue destination="C5M-jm-2AT" kind="relationship" relationship="viewControllers" id="dgI-S6-0jQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDO-5V-U01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1050,7 +955,6 @@ nuestra ayuda. ¡Siguenos!</string>
     </scenes>
     <resources>
         <image name="fb logo bot" width="512" height="512"/>
-        <image name="folder" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="persona" width="24" height="24"/>
