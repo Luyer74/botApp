@@ -11,7 +11,7 @@ import Firebase
 import Photos
 import FirebaseStorage
 
-class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     //@IBOutlet weak var emaillbl: UILabel!
     @IBOutlet weak var tfNombre: UITextField!
     @IBOutlet weak var tfSexo: UITextField!
@@ -24,17 +24,17 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var tfContacto: UITextField!
     
     let datePicker =  UIDatePicker()
+    let sexPicker = UIPickerView()
     var ref : DatabaseReference!
     var daysPassed = 0
     let imagePicker = UIImagePickerController()
     var urlFoto : URL!
-    
+    private let sexos = ["Masculino","Femenino"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*if Auth.auth().currentUser != nil {
-            emaillbl.text = Auth.auth().currentUser?.email
-        }*/
         // Do any additional setup after loading the view.
+        sexPicker.delegate = self
+        createPicker()
         createDatePicker()
         let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
         view.addGestureRecognizer(tap)
@@ -44,6 +44,35 @@ class ViewControllerCompartir: UIViewController, UIImagePickerControllerDelegate
     @IBAction func quitaTeclado(){
         view.endEditing(true)
     }
+    //MARK: -Funciones para el Picker del campo Sexo
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return sexos.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return sexos[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        tfSexo.text = sexos[row]
+    }
+    
+    func createPicker() {
+        //toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //asignar toolbar
+        tfSexo.inputAccessoryView = toolbar
+        
+        //asignar Picker al text field
+        tfSexo.inputView = sexPicker
+    }
+    
     //MARK: - Funciones para el Date Picker
     func createDatePicker() {
         //toolbar
