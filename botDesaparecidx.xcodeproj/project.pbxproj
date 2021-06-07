@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8CC988DD61712D099C2F05D6 /* Pods_botDesaparecidx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8124222847D04DFF346405F /* Pods_botDesaparecidx.framework */; };
 		B2157DFE2655B28D00601FDE /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2157DFD2655B28200601FDE /* MuseoModerno-VariableFont_wght.ttf */; };
-		B2B78D98266DBDAD00219C52 /* ViewControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B78D97266DBDAD00219C52 /* ViewControllerConfig.swift */; };
 		B2C738A32651D8A30015DA8E /* TableViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A22651D8A30015DA8E /* TableViewControllerInicio.swift */; };
 		B2C738A92651D95B0015DA8E /* ViewControllerCompartir.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */; };
 		B2D9F257266032A100D8D655 /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D9F256266032A000D8D655 /* ViewControllerInfo.swift */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		74DD964D0108D37424E7CB88 /* Pods-botDesaparecidx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-botDesaparecidx.debug.xcconfig"; path = "Target Support Files/Pods-botDesaparecidx/Pods-botDesaparecidx.debug.xcconfig"; sourceTree = "<group>"; };
 		B2157DFD2655B28200601FDE /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MuseoModerno-VariableFont_wght.ttf"; path = "botDesaparecidx/Fonts/MuseoModerno-VariableFont_wght.ttf"; sourceTree = SOURCE_ROOT; };
-		B2B78D97266DBDAD00219C52 /* ViewControllerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfig.swift; sourceTree = "<group>"; };
 		B2C738A22651D8A30015DA8E /* TableViewControllerInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerInicio.swift; sourceTree = "<group>"; };
 		B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCompartir.swift; sourceTree = "<group>"; };
 		B2D9F256266032A000D8D655 /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				FA9BEB50262F818C009E3540 /* SceneDelegate.swift */,
 				FA9BEB52262F818C009E3540 /* ViewController.swift */,
 				FA9BEB54262F818C009E3540 /* Main.storyboard */,
-				B2B78D97266DBDAD00219C52 /* ViewControllerConfig.swift */,
 				B2D9F256266032A000D8D655 /* ViewControllerInfo.swift */,
 				B2C738A82651D95A0015DA8E /* ViewControllerCompartir.swift */,
 				B2C738A22651D8A30015DA8E /* TableViewControllerInicio.swift */,
@@ -280,7 +277,6 @@
 				FABD25B3265305000047958D /* tweet.swift in Sources */,
 				FA25154B264C2AEB00B4DB65 /* ViewControllerInicio.swift in Sources */,
 				FA9BEB51262F818C009E3540 /* SceneDelegate.swift in Sources */,
-				B2B78D98266DBDAD00219C52 /* ViewControllerConfig.swift in Sources */,
 				FA251548264C24BC00B4DB65 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

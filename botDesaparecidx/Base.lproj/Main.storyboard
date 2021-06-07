@@ -720,22 +720,6 @@ nuestra ayuda. ¡Siguenos!</string>
             </objects>
             <point key="canvasLocation" x="4577" y="-927"/>
         </scene>
-        <!--Config-->
-        <scene sceneID="PZU-lD-3fv">
-            <objects>
-                <viewController id="HL6-Kn-p4F" customClass="ViewControllerBuscar" customModule="botDesaparecidx" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OTX-hb-hoN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4g2-kq-8t8"/>
-                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Config" image="search" id="0Qk-aD-xCh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OKp-ib-O3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3929" y="-252"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="ABc-Kl-BmJ">
             <objects>
@@ -786,7 +770,6 @@ nuestra ayuda. ¡Siguenos!</string>
                     </tabBar>
                     <connections>
                         <segue destination="BLr-u0-mLL" kind="relationship" relationship="viewControllers" id="UzG-ev-v5v"/>
-                        <segue destination="HL6-Kn-p4F" kind="relationship" relationship="viewControllers" id="8c8-JP-UfP"/>
                         <segue destination="dVm-xm-ZFs" kind="relationship" relationship="viewControllers" id="Lrf-Wa-rOP"/>
                         <segue destination="G4W-vg-fgd" kind="relationship" relationship="viewControllers" id="D8b-oS-ewJ"/>
                     </connections>
@@ -958,7 +941,6 @@ nuestra ayuda. ¡Siguenos!</string>
         <image name="home" width="25" height="25"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="persona" width="24" height="24"/>
-        <image name="search" width="25" height="25"/>
         <image name="share" width="25" height="25"/>
         <image name="transparent-logo" width="500" height="500"/>
         <namedColor name="AccentColor">
